@@ -7,143 +7,256 @@
   <body>
     <?php include('inc/header.php'); ?>
     <main class="page">
-      <section id="la-ferme">
+      <section id="visites-guidees">
         <div class="grid-container">
           <div class="grid-x grid-padding-x">
-            <div class="large-7 medium-6 small-12 cell">
+            <div class="large-12 medium-12 small-12 cell">
+              <h2>VISITES GUIDÉES</h2>
+            </div>
+            <div class="large-2 medium-2 small-12 cell">
+              <img src="img/logo-bienvenue.png" alt="bienvenue à la ferme">
+            </div>
+            <div class="large-10 medium-10 small-12 cell">
+              <p>&nbsp;<br/><strong>Ferme de découverte de Lamas en Haute Gironde</strong></p>
+              <p>
+                Notre élevage « Les Lamas de Brandacot » a reçu les agréments de « ferme de découverte » en 2009 et de « ferme pédagogique » en 2011 par le réseau Bienvenue à la Ferme, chambre d’Agriculture de la Gironde.
+              </p>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="large-7 medium-12 small-12 cell">
+              <p>
+                Un troupeau d’une vingtaine de lamas, étalons, femelles et petits vivent sur 12 ha de prairies et de bois.<br/>
+                Sur leur territoire, guidés par l’éleveur vous découvrirez leur mode de vie et leur singularité.
+              </p>
+              <p>
+                Eleveur-naisseur, Joël vous fera plonger dans sa passion pour le lama. Après un passage obligé sur les informations scientifiques se sera la présentation de ses animaux (excellente génétique), vous y verrez des lamas primés en concours européens ainsi que l’unique lama récemment médaillé en France par 30 Million d’amis pour ses états de services exemplaires.
+              </p>
+              <p>
+                Elevage peu commun vous découvrirez la pratique du gardien de troupeau, spécialité de notre élevage (rare en France).
+              </p>
+              <p>
+                Vous repartirez de cette visite avec un tout autre regard sur le lama. Oui ces animaux peuvent être majestueux, dociles, et non, les lamas de Brandacot ne crachent pas sur l’homme et vous saurez pourquoi !
+              </p>
+            </div>
+            <div class="large-5 medium-12 small-12 cell">
               <div class="grid-x grid-padding-x">
                 <div class="large-12 medium-12 small-12 cell">
-                  <h2>VISITES GUIDÉES</h2>
+                  <a data-fancybox data-src="#video01" class="video"><img src="img/vignette_visite.jpg" alt="visite" /></a>
                 </div>
-                <div class="large-4 medium-4 small-12 cell">
-                  <img src="img/logo-bienvenue.png" alt="bienvenue à la ferme">
-                </div>
-                <div class="large-8 medium-8 small-12 cell">
-                  <p>
-                    L’Elevage à l’enseigne <strong>« Les Lamas de Brandacot »</strong> se compose d’une vingtaine de lamas sur une propriété de douze hectares de bois et de prairies. Située en Haute Gironde, commune de SAINT PAUL, la ferme est au coeur des vignes  à 7 km de BLAYE.  Joël et Florence s’y délectent depuis 1998  à la production de crias (petits lamas).<br/>Si les fonctions du lama sont multiples,  notre élevage à pour activité :
-                  </p>
-                  <ul>
-                    <li><strong>La production et vente de lamas</strong></li>
-                    <li><strong>Le lama gardien de troupeau</strong> (notre spécialité)</li>
-                    <li><strong>Visites guidées de la ferme.</strong> Notre élevage agréé Ferme de Découverte et Ferme Pédagogique est ouvert au grand public, groupes divers, scolaires et centres de loisirs.</li>
-                    <li><strong>La location de lamas pour le débroussaillement en entreprise.</strong></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="large-5 medium-6 small-12 cell">
-              <div class="grid-x grid-padding-x">
                 <div class="large-6 medium-6 small-6 cell">
                   <figure>
-                    <a href="img/jeunes-lamas.JPG" data-fancybox="photos" data-caption="Jeunes lamas"><img src="img/jeunes-lamas.JPG" alt="Jeunes lamas" /></a>
-                    <figcaption>Jeunes lamas</figcaption>
+                    <a href="img/Espace-pique-nique.JPG" data-fancybox="photos"><img src="img/Espace-pique-nique.JPG" alt="Espace pique-nique" /></a>
+                    <figcaption>Espace pique-nique</figcaption>
                   </figure>
                 </div>
                 <div class="large-6 medium-6 small-6 cell">
                   <figure>
-                    <a href="img/photo-grand-public.JPG" data-fancybox="photos" data-caption="Grand public"><img src="img/photo-grand-public.JPG" alt="Grand public" /></a>
-                    <figcaption>Grand public</figcaption>
-                  </figure>
-                </div>
-                <div class="large-6 medium-6 small-6 cell">
-                  <figure>
-                    <a href="img/cheyenne-2.jpg" data-fancybox="photos" data-caption="Cheyenne"><img src="img/cheyenne-2.jpg" alt="Cheyenne" /></a>
-                    <figcaption>Cheyenne</figcaption>
-                  </figure>
-                </div>
-                <div class="large-6 medium-6 small-6 cell">
-                  <figure>
-                    <a href="img/debroussaillement.jpg" data-fancybox="photos" data-caption="Lamas sur site de débroussaillement"><img src="img/debroussaillement.jpg" alt="Lamas sur site de débroussaillement" /></a>
-                    <figcaption>Lamas sur site de débroussaillement</figcaption>
+                    <a href="img/IMG_3408.JPG" data-fancybox="photos" data-caption="Bienvenue à la ferme des lamas"><img src="img/IMG_3408.JPG" alt="Bienvenue à la ferme des lamas" /></a>
+                    <figcaption>Bienvenue à la ferme des lamas</figcaption>
                   </figure>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section id="la-ferme-video">
+        <section id="grand-public">
           <div class="grid-container">
             <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 small-12 cell">
-                <a data-fancybox data-src="#video01" class="video"><img src="img/vignette_123Intro.jpg" alt="intro" /></a>
+              <div class="large-12 medium-12 small-12 cell">
+                <h3>POUR LE GRAND PUBLIC</h3>
               </div>
-              <div class="large-6 medium-6 small-12 cell">
-                <a data-fancybox data-src="#video02" class="video"><img src="img/vignette_678dernier.jpg" alt="dernier" /></a>
+              <div class="large-3 medium-4 small-12 cell">
+                <figure>
+                  <a href="img/photo-grand-public.JPG" data-fancybox="photos" data-caption="Visites pour le grand public"><img src="img/photo-grand-public.JPG" alt="Visites pour le grand public" /></a>
+                  <figcaption>Visites pour le grand public</figcaption>
+                </figure>
+              </div>
+              <div class="large-9 medium-8 small-12 cell">
+                <p>
+                  Les dates de visites  programmées pour le grand public sont visibles en page d’accueil (cartouche Actualités), à droite de l'écran d'accueil.<br/>
+                  <span class="underline">Ouverture toute l’année :</span><br/>
+                  Individuel et groupe sur Rendez-vous, sauf dimanche(*) et jours fériés.<br/>
+                  Durée de la visite : 1 heure 30<br/>
+                  (*) Groupes sur réservation.
+                </p>
+                <p>
+                  <span class="underline">Tarifs :</span><br/>
+                  Adulte: <strong>6€</strong> - de 3 à 12 ans: <strong>4€</strong>, gratuit pour les enfants de moins de 3 ans.<br/>
+                  <strong>Pour les groupes</strong> de plus de <strong>20</strong> personnes : Adulte : <strong>5€</strong> - de 3 à 12 ans: <strong>3,50€</strong><br/>
+                  gratuit pour un accompagnateur.
+                </p>
               </div>
             </div>
           </section>
-          <section id="la-ferme-medias">
+          <section id="groupe-scolaire">
             <div class="grid-container">
               <div class="grid-x grid-padding-x">
                 <div class="large-12 medium-12 small-12 cell">
-                  <h2>LES MEDIAS EN PARLENT!</h2>
+                  <h3>GROUPES SCOLAIRES ET CENTRES DE LOISIRS !</h3>
+                </div>
+                <div class="large-6 medium-12 small-12 cell">
                   <p>
-                    -  L’an 2000, lors du concours Européen des lamas et Alpagas à Rambouillet, Joël remporte avec un de ses lamas le 1er prix de randonnée, acclamé par le public il est nommé « l’homme qui murmure aux oreilles des lamas » par le juge américain – article publié sur le journal « le Léopard » de la Légion de Gendarmerie d’Aquitaine.
+                    <span class="underline">Ouverture :</span><br/>
+                		Toute l’année, sur RDV<br/>
+                		Durée de la visite : Demi-journée ou journée.
                   </p>
                   <p>
-                    -  Spécialisé dans la pratique du lama gardien de troupeau, deux articles fournis par nos soins ont été proposés et diffusés par l’Alliance Pastorale sur leurs bulletins mensuels.
+                    <span class="underline">Tarifs :</span>
                   </p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Description</th>
+                        <th>Tarif €</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>La demi-journée pour 15-30 enfants</td>
+                        <td>105€</td>
+                      </tr>
+                      <tr>
+                        <td>Par enfant supplémentaire</td>
+                        <td>3€</td>
+                      </tr>
+                      <tr>
+                        <td>La journée pour 15-30 enfants</td>
+                        <td>180€</td>
+                      </tr>
+                      <tr>
+                        <td>Par enfant supplémentaire</td>
+                        <td>5€</td>
+                      </tr>
+                    </tbody>
+                  </table>
                   <p>
-                    -  Plusieurs articles sur notre élevage et notre activité de location de lamas en entreprise pour le débroussaillement, parus sur  les journaux locaux Sud-Ouest et Haute-Gironde.
+                    Labellisé Ferme Pédagogique depuis 2011, notre prestation se déroule par une visite de découverte de l’élevage suivi de différents ateliers adaptés au cycle tels que :
                   </p>
-                  <p>-  2007, émission télévisée par FR3 sur notre élevage.</p>
-                  <p>-  Octobre 2009, lors du salon européen des lamas et alpagas à Pompadour (Corrèze) deux femelles lamas de notre élevage, Saba et Tanagra remportent successivement les titres de « Grande Championne » et 3ème prix  dans leur catégorie de femelles moyennement lainées. Résultats publiés sur plusieurs journaux locaux.</p>
+                  <ul>
+                    <li>Collage de laine sur dessin lama.</li>
+                    <li>Atelier Amérique du Sud.</li>
+                    <li>Les principes de la rumination avec maquette.</li>
+                    <li>La laine dans tous ses états, de la tonte au filage (travaux pratiques).</li>
+                    <li>Naissance d’un lama.</li>
+                    <li>Les herbes prairiales.</li>
+                  </ul>
                   <p>
-                    -  Mars 2010, diffusion d’un court métrage par 30 Millions d’Amis sur notre spécialité de Lama Gardien de Troupeau avec décoration du lama Eros  pour ses états de services exemplaires.</p>
+                    Nous contacter pour tout aménagement<br/>
+                    (tél. 05 57 42 20 61).
                   </p>
-                  <p>
-                    -  Octobre2011, diffusion d’un court métrage sur notre spécialité de « Lama gardien de troupeau » par Direct 8, les animaux de la 8.
+                  <p class="telechargement">
+                    Télechargez<br/><a href="pdf/fichepedagogique.pdf" target="_blank" title="fiche pédagogique">la fiche pédagogique au format pdf</a>
                   </p>
                 </div>
-                <div class="large-12 medium-12 small-12 cell">
-                  <a data-fancybox data-src="#video03" class="video"><img src="img/vignette_10ErosMedaille.jpg" alt="medaille" /></a>
+                <div class="large-6 medium-12 small-12 cell">
+                  <div class="grid-x grid-padding-x">
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/IMG_3058.JPG" data-fancybox="photos"><img src="img/IMG_3058.JPG" alt="photo" /></a>
+                      </figure>
+                    </div>
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/IMG_3343.JPG" data-fancybox="photos"><img src="img/IMG_3343.JPG" alt="photo" /></a>
+                      </figure>
+                    </div>
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/IMG_3347.JPG" data-fancybox="photos"><img src="img/IMG_3347.JPG" alt="photo" /></a>
+                      </figure>
+                    </div>
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/Collage-laine-001.jpg" data-fancybox="photos"><img src="img/Collage-laine-001.jpg" alt="photo" /></a>
+                      </figure>
+                    </div>
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/IMG_3351.JPG" data-fancybox="photos"><img src="img/IMG_3351.JPG" alt="photo" /></a>
+                      </figure>
+                    </div>
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/IMG_3437.JPG" data-fancybox="photos"><img src="img/IMG_3437.JPG" alt="photo" /></a>
+                      </figure>
+                    </div>
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/tissage.jpg" data-fancybox="photos"><img src="img/tissage.jpg" alt="photo" /></a>
+                      </figure>
+                    </div>
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/les-herbes-prairiales.JPG" data-fancybox="photos"><img src="img/les-herbes-prairiales.JPG" alt="photo" /></a>
+                      </figure>
+                    </div>
+                    <div class="large-6 medium-4 small-6 cell">
+                      <figure>
+                        <a href="img/Rumination.JPG" data-fancybox="photos"><img src="img/Rumination.JPG" alt="photo" /></a>
+                      </figure>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             </section>
-            <section id="la-ferme-presse">
+            <section id="renseignements-complementaires">
               <div class="grid-container">
                 <div class="grid-x grid-padding-x">
-                  <div class="large-3 medium-4 small-6 cell">
-                    <figure>
-                      <a href="articles/article-sud-ouest.jpg" data-fancybox="presse" data-caption="Article Sud Ouest 29/10/2011"><img src="articles/article-sud-ouest.jpg" alt="Article Sud Ouest 29/10/2011" /></a>
-                      <figcaption>Article Sud Ouest 29/10/2011</figcaption>
-                    </figure>
+                  <div class="large-12 medium-12 small-12 cell">
+                    <h3>RENSEIGNEMENTS COMPLÉMENTAIRES</h3>
                   </div>
-                  <div class="large-3 medium-4 small-6 cell">
-                    <figure>
-                      <a href="articles/article-30-millions-d-amis.jpg" data-fancybox="presse" data-caption="Article 30 millions d'amis"><img src="articles/article-30-millions-d-amis.jpg" alt="Article 30 millions d'amis" /></a>
-                      <figcaption>Article 30 millions d'amis</figcaption>
-                    </figure>
+                  <div class="large-3 medium-5 small-12 cell">
+                    <div class="grid-x grid-padding-x">
+                      <div class="large-12 medium-12 small-6 cell">
+                        <figure>
+                          <a href="img/espace-conference.jpg" data-fancybox="photos" data-caption="Espace de conférences en sous-bois"><img src="img/espace-conference.jpg" alt="Espace de conférences en sous-bois" /></a>
+                          <figcaption>Espace de conférences en sous-bois</figcaption>
+                        </figure>
+                      </div>
+                      <div class="large-12 medium-12 small-6 cell">
+                        <figure>
+                          <a href="img/Espace-pique-nique-2.JPG" data-fancybox="photos" data-caption="Espace pour le pique-nique en sous-bois"><img src="img/Espace-pique-nique-2.JPG" alt="Espace pour le pique-nique en sous-bois" /></a>
+                          <figcaption>Espace pour le pique-nique en sous-bois</figcaption>
+                        </figure>
+                      </div>
+                    </div>
                   </div>
-                  <div class="large-3 medium-4 small-6 cell">
-                    <figure>
-                      <a href="articles/article-haute-gironde-n-1.jpg" data-fancybox="presse" data-caption="Article Haute Gironde n°1"><img src="articles/article-haute-gironde-n-1.jpg" alt="Article Haute Gironde n°1" /></a>
-                      <figcaption>Article Haute Gironde n°1</figcaption>
-                    </figure>
+                  <div class="large-9 medium-7 small-12 cell">
+                    <p>
+                      <span class="underline">Activité de l’élevage</span><br/>
+                      - Production et vente de crias de qualité (petits lamas); le tronc commun des contraintes reste le même que tous autres élevage classique.<br/>
+                      - Désireux d’être acteur dans le développement durable, nous avons choisi le lama pour ses qualités de débroussailleur et de gardien de troupeau et en avons fait nos spécialités.
+                    </p>
+                    <p>
+                      <span class="underline">La Ferme</span><br/>
+                      Ferme Girondine avec ses prairies au coeur du vignoble de la Haute Gironde.
+                    </p>
+                    <p>
+                      <span class="underline">Accueil</span><br/>
+                      Parking pour bus.<br/>
+                      Un espace d’accueil et exposition.<br/>
+                      Aire de pique-nique en sous-bois  dans le parc des lamas (gratuit, avant, pendant ou après la visite)
+                    </p>
+                    <p>
+                      <span class="underline">Taille des groupes</span><br/>
+                      30 personnes, se renseigner jusqu’à 50 personnes.
+                    </p>
+                    <p>
+                      <span class="underline">Localisation</span><br/>
+                      A 7 km de Blaye et à 3 km à l’Est du bourg Saint Paul.<br/>
+                      Venant de Saint André de Cubzac en direction de Saintes par la RD 937 (anciennement RN 137), suivant les fléchages Les Lamas de Brandacot, au niveau de Saint Paul, tourner à droite sur la D 737, direction La Grela, tourner à gauche à Poncla. Puis  prendre la 1ère à droite.
+                    </p>
+                    <p>
+                      <span class="underline">Recommandation en période humide</span><br/>
+                      Lors de la visite,  l’éleveur vous conduira sur les territoires des lamas, il est conseillé de s’équiper de chaussures et vêtements appropriés.
+                    </p>
                   </div>
-                  <div class="large-3 medium-4 small-6 cell">
+                  <div class="large-12 medium-12 small-12 cell text-center">
                     <figure>
-                      <a href="articles/article-haute-gironde.jpg" data-fancybox="presse" data-caption="Article Haute Gironde"><img src="articles/article-haute-gironde.jpg" alt="Article Haute Gironde" /></a>
-                      <figcaption>Article Haute Gironde</figcaption>
-                    </figure>
-                  </div>
-                  <div class="large-3 medium-4 small-6 cell">
-                    <figure>
-                      <a href="articles/article-alliance-pastorale.jpg" data-fancybox="presse" data-caption="Article Alliance Pastorale"><img src="articles/article-alliance-pastorale.jpg" alt="Article Alliance Pastorale" /></a>
-                      <figcaption>Article Alliance Pastorale</figcaption>
-                    </figure>
-                  </div>
-                  <div class="large-3 medium-4 small-6 cell">
-                    <figure>
-                      <a href="articles/article-sud-ouest-n-1.jpg" data-fancybox="presse" data-caption="Article Sud-Ouest n°1"><img src="articles/article-sud-ouest-n-1.jpg" alt="Article Sud-Ouest n°1" /></a>
-                      <figcaption>Article Sud-Ouest n°1</figcaption>
-                    </figure>
-                  </div>
-                  <div class="large-3 medium-4 small-6 cell">
-                    <figure>
-                      <a href="articles/article-sud-ouest-2.jpg" data-fancybox="presse" data-caption="Article Sud-Ouest"><img src="articles/article-sud-ouest-2.jpg" alt="Article Sud-Ouest" /></a>
-                      <figcaption>Article Sud-Ouest</figcaption>
+                      <a href="img/plan.gif" data-fancybox="plan" data-caption="Circuit préconisé pour les bus, balisé par signalétique"><img src="img/plan.gif" alt="Circuit préconisé pour les bus, balisé par signalétique" /></a>
+                      <figcaption>Circuit préconisé pour les bus, balisé par signalétique</figcaption>
                     </figure>
                   </div>
                 </div>
@@ -152,13 +265,7 @@
     </main>
 
     <div id="video01" class="fancybox-content">
-      <video src="videos/123Intro.mp4" controls></video>
-    </div>
-    <div id="video02" class="fancybox-content">
-      <video src="videos/678dernier.mp4" controls></video>
-    </div>
-    <div id="video03" class="fancybox-content">
-      <video src="videos/10ErosMedaille.mp4" controls></video>
+      <video src="videos/visite.mp4" controls></video>
     </div>
 
     <?php include('inc/footer.php'); ?>

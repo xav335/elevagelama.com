@@ -59,6 +59,7 @@ h3 {font-family:'PhontPhreaksHandwriting';font-size:30px;color:#fff;}
 
 /* Commun */
 p {line-height:1.4;}
+.underline {text-decoration:underline;}
 
 .edito {padding:30px 0;}
 .edito div {text-align:right;font-family:'PhontPhreaksHandwriting';font-size:25px;line-height:30px;border-right:1px solid #fff;padding-right:10px;}
@@ -93,13 +94,27 @@ figcaption {font-size:11px;line-height:14px;padding:10px 0;text-align:center;}
 main.page section {max-width:60rem;margin:0 auto;}
 section#la-ferme-presse {margin:50px auto;}
 section#la-ferme-presse figure a {max-height:200px;overflow:hidden;}
-section#gardien-de-troupeau figure a {max-height:115px;overflow:hidden;}
+section#gardien-de-troupeau figure a, section#groupe-scolaire figure a {max-height:115px;overflow:hidden;margin-bottom:10px;}
 section#le-lama h2 {text-align:center;}
 section#nos-partenaires a, section#contactez-nous a {color:#ffd549;text-decoration:underline;}
 section#contactez-nous form {background:#31261e;padding:20px;}
 section#contactez-nous form h3, section#contactez-nous [type="submit"] {font-family:'PhontPhreaksHandwriting';font-size:30px;color:#fff;}
 section#contactez-nous label {color:#fff;}
 section#contactez-nous [type="submit"] {background:none;text-transform:uppercase;border:0;}
+section#visites-guidees img[alt="bienvenue à la ferme"] {max-height:100px;}
+section#visites-guidees .video {margin-bottom:10px;}
+section a {color:#fff;text-decoration:underline;}
+section a:hover {color:#ffd549;}
+
+p.telechargement {background:rgba(49, 38, 30, 0.95);padding:10px;text-transform:uppercase;max-width:300px;margin:10px auto;text-align:center;}
+p.telechargement::first-line {font-size:20px;}
+p.telechargement a {font-size:12px;}
+.zone-vente {background:rgba(49, 38, 30, 0.95);padding:10px;margin-bottom:30px;}
+a.contact {display:block;text-align:center;text-align:center;font-family:'PhontPhreaksHandwriting';font-size:26px;}
+
+table thead, table tbody, table tfoot {background:none;color:#fff;}
+table tbody tr:nth-child(even) {background:none;}
+table thead th, table tbody th, table tbody td {border:1px solid #fff;}
 
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {border-radius:5px;box-shadow:none;height:auto;padding:0 .5rem;line-height:2rem;background:none;}
 
