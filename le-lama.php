@@ -48,6 +48,12 @@
     </main>
 
     <?php include('inc/footer.php'); ?>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#menu li:nth-child(2)').addClass('active');
+        $('#menu li li:first-child').removeClass('active');
+      });
+    </script>
 
   </body>
 </html>

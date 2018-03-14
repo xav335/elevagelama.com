@@ -165,6 +165,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $('#menu li:first-child').addClass('active');
+        $('#menu li li:first-child').removeClass('active');
       });
     </script>
   </body>

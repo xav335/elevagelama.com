@@ -74,7 +74,8 @@
     <?php include('inc/footer.php'); ?>
     <script type="text/javascript">
       $(document).ready(function(){
-        $('#menu li:nth-child(3)').addClass('active');
+        $('#menu li:nth-child(2)').removeClass('active');
+        $('#menu li li:first-child').addClass('active');
       });
     </script>
 

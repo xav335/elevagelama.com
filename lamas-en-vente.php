@@ -32,7 +32,7 @@
     <?php include('inc/footer.php'); ?>
     <script type="text/javascript">
       $(document).ready(function(){
-        $('#menu li:nth-child(5)').addClass('active');
+        $('#menu li:nth-child(4)').addClass('active');
       });
     </script>
 

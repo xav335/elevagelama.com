@@ -23,11 +23,16 @@
     <ul id="menu">
       <div>
         <li><a href="notre-ferme.php">Notre ferme</a></li>
-        <li><a href="le-lama.php">Le lama</a></li>
-        <li><a href="le-lama-gardien-de-troupeau.php">Lama gardien de troupeau</a></li>
+        <li>
+          <a href="le-lama.php">Le lama</a>
+          <ul>
+            <li><a href="le-lama-gardien-de-troupeau.php">Lama gardien de troupeau</a></li>
+          </ul>
+        </li>
         <li><a href="visites-guidees.php">Visites guidées</a></li>
         <li><a href="lamas-en-vente.php">Lamas en vente</a></li>
-        <li><br/><a href="nos-partenaires.php">Nos partenaires</a></li>
+        <li><br/><a href="livre-d-or.php">Livre d'or</a></li>
+        <li><a href="nos-partenaires.php">Nos partenaires</a></li>
         <li><a href="contactez-nous.php">Contactez-nous</a></li>
       </div>
     </ul>

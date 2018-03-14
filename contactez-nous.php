@@ -108,6 +108,7 @@
 
         $(document).ready(function(){
           $('#menu li:last-child').addClass('active');
+          $('#menu li li:first-child').removeClass('active');
         });
       </script>
 
