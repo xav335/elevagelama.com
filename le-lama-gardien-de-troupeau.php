@@ -65,10 +65,10 @@
     </main>
 
     <div id="video01" class="fancybox-content">
-      <video src="videos/5gardienTroupeauSanPedro.mp4" controls></video>
+      <video id="myVideo01"  src="videos/5gardienTroupeauSanPedro.mp4" controls></video>
     </div>
     <div id="video02" class="fancybox-content">
-      <video src="videos/gardien.mp4" controls></video>
+      <video id="myVideo02"  src="videos/gardien.mp4" controls></video>
     </div>
 
     <?php include('inc/footer.php'); ?>
