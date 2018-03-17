@@ -118,6 +118,9 @@ table thead th, table tbody th, table tbody td {border:1px solid #fff;}
 
 .fancybox-content {display:none;}
 
+a.tel {font-size:34px;color:#fff;}
+.telephone  {text-align: center;}
+
 
 /* Maps */
 #map-canvas {width:100%;height:400px;}

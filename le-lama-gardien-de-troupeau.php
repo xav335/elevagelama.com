@@ -11,7 +11,7 @@
         <div class="grid-container">
           <div class="grid-x grid-padding-x">
             <div class="large-7 medium-6 small-12 cell">
-                  <h2>LE LAMA GARDIEN DE TROUPEAU</h2>
+                  <h2>LE LAMA GARDIEN</h2>
                   <p><strong>Information à l’attention des professionnels, éleveurs de moutons.</strong></p>
                   <p>
                     Aujourd’hui encore, la pratique du lama Gardien de Troupeau est peu connue des bergers et de la plupart des éleveurs de lamas. Depuis plusieurs années  notre élevage s’est particulièrement spécialisé dans la production du <strong>lama gardien de troupeau</strong>. Expérience et professionnalisme, nous livrons chez le berger  le lama avec toutes les consignes de conduite quant à cette fonction et nous en assurons le suivi.
@@ -74,7 +74,8 @@
     <?php include('inc/footer.php'); ?>
     <script type="text/javascript">
       $(document).ready(function(){
-        $('#menu li:nth-child(2)').removeClass('active');
+       // $('#menu li:nth-child(3)').removeClass('active');
+        $('#menu li:nth-child(3)').addClass('active');
         $('#menu li li:first-child').addClass('active');
       });
     </script>

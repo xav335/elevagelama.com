@@ -17,27 +17,37 @@
               <img src="img/logo-bienvenue.png" alt="bienvenue à la ferme">
             </div>
             <div class="large-10 medium-10 small-12 cell">
-              <p>&nbsp;<br/><strong>Ferme de découverte de Lamas en Haute Gironde</strong></p>
+              <p>&nbsp;<br/><strong>Ferme de Découverte et Pédagogique</strong></p>
               <p>
-                Notre élevage « Les Lamas de Brandacot » a reçu les agréments de « ferme de découverte » en 2009 et de « ferme pédagogique » en 2011 par le réseau Bienvenue à la Ferme, chambre d’Agriculture de la Gironde.
-              </p>
+                Notre élevage « Les Lamas de Brandacot » a reçu les agréments de  « ferme de découverte » 
+                en 2009 et de « ferme pédagogique » en 2011 
+                par le réseau Bienvenue à la Ferme, chambre d’Agriculture de la Gironde et de l’Inspection Académique.
+              </p>         
             </div>
           </div>
           <div class="grid-x grid-padding-x">
             <div class="large-7 medium-12 small-12 cell">
+              <p>&nbsp;<br/><strong>La visite de Découverte</strong></p>
               <p>
-                Un troupeau d’une vingtaine de lamas, étalons, femelles et petits vivent sur 12 ha de prairies et de bois.<br/>
+                Un troupeau d’une vingtaine de lamas, étalons, femelles et petits vivent sur 12 ha de prairies et de bois.
+              </p>
+              <p>
                 Sur leur territoire, guidés par l’éleveur vous découvrirez leur mode de vie et leur singularité.
               </p>
               <p>
-                Eleveur-naisseur, Joël vous fera plonger dans sa passion pour le lama. Après un passage obligé sur les informations scientifiques se sera la présentation de ses animaux (excellente génétique), vous y verrez des lamas primés en concours européens ainsi que l’unique lama récemment médaillé en France par 30 Million d’amis pour ses états de services exemplaires.
+                Eleveur-naisseur, Joël vous fera plonger dans sa passion 
+                pour le lama. Après un passage obligé sur les informations scientifiques sous le hall, 
+                viendra la présentation des animaux sur leur territoire,  les femelles gestantes et allaitantes
+                avec leur petit, les males reproducteurs (lamas pour la plupart primés en concours européens).
+                Après vous avoir développé les nombreuses fonctions du lama et montré les différentes structures
+                Joël vous racontera la vie mémorable d’Eros, unique lama médaillé en France par 30 Million d’amis.
               </p>
               <p>
-                Elevage peu commun vous découvrirez la pratique du gardien de troupeau, spécialité de notre élevage (rare en France).
+                Elevage peu commun vous découvrirez la pratique du lama gardien de troupeau, spécialité de notre élevage.
               </p>
               <p>
-                Vous repartirez de cette visite avec un tout autre regard sur le lama. Oui ces animaux peuvent être majestueux, dociles, et non, les lamas de Brandacot ne crachent pas sur l’homme et vous saurez pourquoi !
-              </p>
+               Vous repartirez de cette visite avec un tout autre regard sur le lama. 
+              </p>         
             </div>
             <div class="large-5 medium-12 small-12 cell">
               <div class="grid-x grid-padding-x">
@@ -53,7 +63,7 @@
                 <div class="large-6 medium-6 small-6 cell">
                   <figure>
                     <a href="img/IMG_3408.JPG" data-fancybox="photos" data-caption="Bienvenue à la ferme des lamas"><img src="img/IMG_3408.JPG" alt="Bienvenue à la ferme des lamas" /></a>
-                    <figcaption>Bienvenue à la ferme des lamas</figcaption>
+                    <figcaption>Enfant en visite</figcaption>
                   </figure>
                 </div>
               </div>
@@ -95,55 +105,29 @@
                 <div class="large-12 medium-12 small-12 cell">
                   <h3>GROUPES SCOLAIRES ET CENTRES DE LOISIRS !</h3>
                 </div>
-                <div class="large-6 medium-12 small-12 cell">
+                <div class="large-6 medium-12 small-12 cell">                 
                   <p>
-                    <span class="underline">Ouverture :</span><br/>
-                		Toute l’année, sur RDV<br/>
-                		Durée de la visite : Demi-journée ou journée.
+                    Labellisé Ferme Pédagogique depuis 2011,  notre prestation pour une visite d’une journée, se déroule en trois temps :
                   </p>
                   <p>
-                    <span class="underline">Tarifs :</span>
+                   <strong>1°) En matinée, visite de découverte de l’élevage (voir ci-dessus)</strong>
                   </p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Description</th>
-                        <th>Tarif €</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>La demi-journée pour 15-30 enfants</td>
-                        <td>105€</td>
-                      </tr>
-                      <tr>
-                        <td>Par enfant supplémentaire</td>
-                        <td>3€</td>
-                      </tr>
-                      <tr>
-                        <td>La journée pour 15-30 enfants</td>
-                        <td>180€</td>
-                      </tr>
-                      <tr>
-                        <td>Par enfant supplémentaire</td>
-                        <td>5€</td>
-                      </tr>
-                    </tbody>
-                  </table>
                   <p>
-                    Labellisé Ferme Pédagogique depuis 2011, notre prestation se déroule par une visite de découverte de l’élevage suivi de différents ateliers adaptés au cycle tels que :
+                    <strong>2°) Pose pique-nique en sous-bois dans le parc des lamas </strong>
+                  </p>
+                  <p>
+                    <strong>3°) Après-midi,  ateliers adaptés au cycle tels que :</strong>
                   </p>
                   <ul>
                     <li>Collage de laine sur dessin lama.</li>
-                    <li>Atelier Amérique du Sud.</li>
+                    <li>Confection bracelet en laine.</li>
                     <li>Les principes de la rumination avec maquette.</li>
-                    <li>La laine dans tous ses états, de la tonte au filage (travaux pratiques).</li>
-                    <li>Naissance d’un lama.</li>
-                    <li>Les herbes prairiales.</li>
+                    <li>L’Amérique du Sud (interactive et en trois dimensions)</li>
+                    <li>Pour les plus grands, atelier interactif sur le thème naissance d’un lama</li>
                   </ul>
                   <p>
-                    Nous contacter pour tout aménagement<br/>
-                    (tél. 05 57 42 20 61).
+                    Nous contacter pour tout renseignement et aménagement.<br/>
+                    ( Tél. 05 57 42 20 61 ou 06 20 89 70 15 ).
                   </p>
                   <p class="telechargement">
                     Télechargez<br/><a href="pdf/fichepedagogique.pdf" target="_blank" title="fiche pédagogique">la fiche pédagogique au format pdf</a>
@@ -184,11 +168,6 @@
                     <div class="large-6 medium-4 small-6 cell">
                       <figure>
                         <a href="img/tissage.jpg" data-fancybox="photos"><img src="img/tissage.jpg" alt="photo" /></a>
-                      </figure>
-                    </div>
-                    <div class="large-6 medium-4 small-6 cell">
-                      <figure>
-                        <a href="img/les-herbes-prairiales.JPG" data-fancybox="photos"><img src="img/les-herbes-prairiales.JPG" alt="photo" /></a>
                       </figure>
                     </div>
                     <div class="large-6 medium-4 small-6 cell">
@@ -271,7 +250,7 @@
     <?php include('inc/footer.php'); ?>
     <script type="text/javascript">
       $(document).ready(function(){
-        $('#menu li:nth-child(3)').addClass('active');
+        $('#menu li:nth-child(4)').addClass('active');
       });
     </script>
 

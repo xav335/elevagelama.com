@@ -23,7 +23,8 @@
                   <div class="swiper-slide" style="background-image:url('img/image-fond-1.jpg');" /></div>
                   <div class="swiper-slide" style="background-image:url('img/image-fond-2.jpg');"></div>
                   <div class="swiper-slide" style="background-image:url('img/image-fond-3.jpg');"></div>
-                </div>
+                  <div class="swiper-slide" style="background-image:url('img/image-fond-4.jpg');"></div>
+		</div>
                 <div class="swiper-pagination swiper-pagination-image"></div>
               </div>
             </div>
@@ -62,6 +63,7 @@
           <div class="grid-x grid-padding-x bg-darkest">
             <div class="large-9 medium-8 small-12 cell edito">
               <div>
+                <p>Agréé Ferme de découverte et pédagogique par le réseau  Bienvenue à la Ferme  et l’Inspection académique nous recevons en visite les groupes scolaires, centre de loisirs et le Grand Public</p>
                 <p>Au sein de notre élevage professionnel situé en Haute-Gironde,<br/>
                   nous nous destinons à la production de crias de qualité (petits lamas).</p>
                 <p>Inscrit dans le développement durable de par nos activités, nous vous recevons également sous les labels de ferme de découverte lors de visites guidées et de Ferme pédagogique.</p>
@@ -78,6 +80,11 @@
     </main>
 
     <?php include('inc/footer.php'); ?>
-
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('#menu li:first-child').addClass('active');
+        $('#menu li li:first-child').removeClass('active');
+      });
+    </script>
   </body>
 </html>

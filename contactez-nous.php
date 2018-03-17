@@ -23,11 +23,12 @@
               </p>
               <p>
                 Tél. 05 57 42 20 61<br/>
-                Mobile : 06 20 89 70 15<br/>
-                Blog : <a href="http://lamadebrandacot.skyblog.com" target="_blank">http://lamadebrandacot.skyblog.com</a>
+                Mobile : 06 20 89 70 15<br/><br/>
+                Les GPS répondent au lieu-dit: <strong>3 les bois de Lafont</strong>  mais également à celui de <strong>Brandacot</strong>
               </p>
               <h3>NOUS TROUVER</h3>
-              <div id="map-canvas"></div>
+             <a href="https://goo.gl/WB5pRD" target="_blank" title="plan"><img src="img/plan.jpg"></a>
+             
             </div>
             <div class="large-6 medium-6 small-12 cell">
               <form action="" method="post">
@@ -57,13 +58,13 @@
                 </label>
               </form>
             </div>
-          </div>
+          </div>                                               
         </div>
       </section>
     </main>
 
     <?php include('inc/footer.php'); ?>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCY06G9zKfwNxkjbIqSINobogSDC0CZQJQ"></script>
 		<script>
 			var map;
 			function initialize() {

@@ -20,20 +20,12 @@
                 </div>
                 <div class="large-8 medium-8 small-12 cell">
                   <p>
-                    Notre élevage agréé Ferme de Découverte et Ferme Pédagogique est ouvert aux groupes scolaires, 
-                    Centres de Loisirs, groupes divers et Grand public.   <br/><br/>
-
-                    A l’enseigne <strong>« Les Lamas de Brandacot »</strong> il se compose d’une vingtaine de lamas sur une propriété 
-                    de douze hectares de bois et de prairies. Située en Haute Gironde, commune de SAINT PAUL, la ferme 
-                    est au cœur des vignes  à 7 km de BLAYE.  
-                    Joël et Florence s’y délectent depuis 1998  à la production de crias (petits lamas).<br/><br/>
-                    
-                    Si les fonctions du lama sont multiples,  notre élevage a pour activité: 
-
+                    L’Elevage à l’enseigne <strong>« Les Lamas de Brandacot »</strong> se compose d’une vingtaine de lamas sur une propriété de douze hectares de bois et de prairies. Située en Haute Gironde, commune de SAINT PAUL, la ferme est au coeur des vignes  à 7 km de BLAYE.  Joël et Florence s’y délectent depuis 1998  à la production de crias (petits lamas).<br/>Si les fonctions du lama sont multiples,  notre élevage à pour activité :
                   </p>
                   <ul>
                     <li><strong>La production et vente de lamas</strong></li>
                     <li><strong>Le lama gardien de troupeau</strong> (notre spécialité)</li>
+                    <li><strong>Visites guidées de la ferme.</strong> Notre élevage agréé Ferme de Découverte et Ferme Pédagogique est ouvert au grand public, groupes divers, scolaires et centres de loisirs.</li>
                     <li><strong>La location de lamas pour le débroussaillement en entreprise.</strong></li>
                   </ul>
                 </div>
