@@ -126,7 +126,7 @@
                     <li>Pour les plus grands, atelier interactif sur le thème naissance d’un lama</li>
                   </ul>
                   <p>
-                    Nous contacter pour tout renseignement et aménagement.<br/>
+                    Nous contacter pour tous renseignements et aménagements.<br/>
                     ( Tél. 05 57 42 20 61 ou 06 20 89 70 15 ).
                   </p>
                   <p class="telechargement">
@@ -216,7 +216,7 @@
                       <span class="underline">Accueil</span><br/>
                       Parking pour bus.<br/>
                       Un espace d’accueil et exposition.<br/>
-                      Aire de pique-nique en sous-bois  dans le parc des lamas (gratuit, avant, pendant ou après la visite)
+                      Aire de pique-nique en sous-bois  dans le parc des lamas (gratuit)
                     </p>
                     <p>
                       <span class="underline">Taille des groupes</span><br/>
@@ -229,7 +229,7 @@
                     </p>
                     <p>
                       <span class="underline">Recommandation en période humide</span><br/>
-                      Lors de la visite,  l’éleveur vous conduira sur les territoires des lamas, il est conseillé de s’équiper de chaussures et vêtements appropriés.
+                      Lors de la visite, il est conseillé de s’équiper de chaussures et vêtements appropriés.
                     </p>
                   </div>
                   <div class="large-12 medium-12 small-12 cell text-center">

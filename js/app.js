@@ -8,6 +8,7 @@ var swiper = new Swiper('.swiper-container-image', {
   },
   pagination: {
     el: '.swiper-pagination-image',
+    clickable: true,
   },
   breakpoints: {
     // when window width is <= 320px
@@ -19,7 +20,12 @@ var swiper = new Swiper('.swiper-container-image', {
 var swiper2 = new Swiper('.swiper-container-actu', {
   pagination: {
     el: '.swiper-pagination-actu',
+    clickable: true,
   },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 });
 
 

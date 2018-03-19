@@ -11,9 +11,12 @@
           </h1>
        
       </div>
-      <div class="large-4 medium-8 small-12 telephone">
-                <a class="tel" href="tel:05 57 42 20 61">05 57 42 20 61</a><br/>
-                <a href="http://www.facebook.com" target="_blank" title="facebook"><img src="img/fb.png"></a>      
+      <div class="large-3 medium-3 small-12 telephone">
+           <a class="tel" href="tel:05 57 42 20 61">05&nbsp;57&nbsp;42&nbsp;20&nbsp;61</a><br/>
+           <a class="tel" href="tel:05 57 42 20 61">06&nbsp;20&nbsp;89&nbsp;70&nbsp;15</a>
+      </div>
+      <div class="large-1 medium-1 small-12 telephone">
+           <a href="http://www.facebook.com" target="_blank" title="facebook"><img src="img/fb.png"></a>      
       </div>
     </div>
   </div>
