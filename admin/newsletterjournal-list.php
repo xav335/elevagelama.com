@@ -2,8 +2,7 @@
 <?php include_once 'inc-auth-granted.php';?>
 <?php include_once 'classes/utils.php';?>
 <?php 
-	require( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/inc.config.php" );
-	require 'classes/Newsletter.php';
+require 'classes/Newsletter.php';
 
 	$newsletter = new Newsletter();
 	$result = $newsletter->journalNewsletterGet();
@@ -55,7 +54,7 @@
 							?>
 							<tr class="<?php if ($i%2!=0) echo 'info'?>">
 								<td><?php echo $value['id']?></td>
-								<td><?php echo traitement_heure_affiche($value['date_envoi'])?></td>
+								<td><?php echo traitement_datetime_affiche($value['date_envoi'])?></td>
 								<td><?php echo $value['titre']?></td>
 								<td><a href="newsletterjournal-detail.php?id=<?php echo $value['id_newsletter'] ?>"><img src="img/modif.png" width="30" alt="Modifier" ></a>&nbsp;&nbsp;&nbsp;&nbsp;
 								<img src="img/eye.png" width="20" alt="preview" onclick="openPreview('<?php echo $value['id']?>')"> </td>

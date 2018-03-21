@@ -1,68 +1,52 @@
-<? include_once 'inc-auth-granted.php';?>
-<? include_once 'classes/utils.php';?>
-<? 
-require 'classes/Catproduct.php';
-
-$catproduct = new Catproduct();
-//Recup des categories
-$catproduct->catproduitViewIterative(null);
-$resultCat = $catproduct->tabView;
+<?php include_once '../inc/inc.config.php'; ?>
+<?php include_once 'inc-auth-granted.php';?>
+<?php include_once 'classes/utils.php';?>
+<?php 
+require 'classes/News.php';
 
 if (!empty($_GET)){ //Modif 
 	$action = 'modif';
-	$result = $catproduct->productGet($_GET['id'],null,null,null);
-	//print_r($result);exit();
-	//print_r($result[0]['categories']);
-	$catproduct=null;
-	
+	$news = new News();
+	$result = $news->newsGet($_GET['id']);
+	//print_r($result);
 	if (empty($result)) {
 		$message = 'Aucun enregistrements';
 	} else {
-		$labelTitle= 	'Produit N°: '. $_GET['id'];
-		$id= 			$_GET['id'];
-		$label=  		$result[0]['label'];
-		$prix=  		$result[0]['prix'];
-		$libprix=  		$result[0]['libprix'];
-		$reference=  	$result[0]['reference'];
-		$titreaccroche= $result[0]['titreaccroche'];
+		$labelTitle = 'Actu N°: '. $_GET['id'];
+		$id_produit= 			$_GET['id'];
+		$titre=  		$result[0]['titre'];
+		$date_news= 	traitement_datetime_affiche($result[0]['date_news']);
 		$accroche= 		$result[0]['accroche'];
-		$description= 	$result[0]['description'];
-		$categories= 	null;
-		if (!empty($result[0]['categories'])){
-			foreach ($result[0]['categories'] as $value) {
-				$categories[]=$value['catid'];
-			}
+		$contenu= 	$result[0]['contenu'];
+		if($result[0]['online']=='1') {
+			$online = 'checked';
+		} else {
+			$online = '';
 		}
-		//print_r($categories);exit();
-		//print_r($categories);exit();
-		for ($i=1;$i<4;$i++) {
+		for ($i=1;$i<2;$i++) {
 			$image[$i] = 	$result[0]['image'.$i];
 			if(empty($image[$i]) || !isset($image[$i])){
 				$img[$i]  = '/img/favicon.png';
 				$imgval[$i]  = '';
 			} else {
-				$img[$i]  = '/photos/products/thumbs'. $image[$i];
+				$img[$i]  = '/photos/news/thumbs'. $image[$i];
 				$imgval[$i]  = $image[$i];
 			}
-		}	
+		}
 	}
-} else { //ajout 
-	$action= 		'add';
-	$labelTitle= 	'Edition Produit ';
-	$id= 			null;
-	$label=  		null;
-	$prix=  		null;
-	$libprix=  		'€';
-	$reference=  	null;
-	$titreaccroche= 'Les + produit';
+} else { //ajout News
+	$action = 'add';
+	$labelTitle = 'Edition Nouvelle actu ';
+	$id_produit= 			null;
+	$titre=  		null;
+	$date_news= 	null;
 	$accroche= 		null;
-	$description= 	null;
-	$categories= 	null;
-	for ($i=1;$i<4;$i++) {
+	$contenu= 		null;
+	$online = 		null;
+	for ($i=1;$i<2;$i++) {
 		$img[$i]  = '/img/favicon.png';
 		$imgval[$i]  = '';
 	}
-	$catproduct=	null;
 }
 ?>
 <!doctype html>
@@ -78,43 +62,40 @@ if (!empty($_GET)){ //Modif
 		<div class="row">
 			<h3><?php echo $labelTitle ?></h3>
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<form name="formulaire" class="form-horizontal" method="POST"  action="formprocess.php">
-					<input type="hidden" name="reference" value="product">
+				<form name="formulaire" class="form-horizontal" method="POST"  action="news-fp.php">
+					<input type="hidden" name="reference" value="news">
 					<input type="hidden" name="action" value="<?php echo $action ?>">
-					<input type="hidden" name="id" id="id" value="<?php echo $id ?>">
+					<input type="hidden" name="id" id="id" value="<?php echo $id_produit ?>">
 					
 					<div class="form-group" >
-						<label class="col-sm-2" for="titre">Nom produit :</label>
-					    <input type="text" class="col-sm-8" name="label" required  value="<?php echo $label ?>">
+						<label class="col-sm-1">Date :</label>
+					    <input class="col-sm-2" type="text" name="datepicker" required id="datepicker" value="<?php echo $date_news?>" >
+					</div>
+					 <div class="form-group" >
+						<label for="titre">Actu à la une :</label>
+					    <input type="checkbox" name="online" <?php echo  $online ?>>
 					</div>
 					<div class="form-group" >
-						<label class="col-sm-2" for="titre">Réf. :</label>
-					    <input type="text" class="col-sm-4" name="ref" required  value="<?php echo $reference ?>">
-					</div>
-					<div class="form-group" >
-						<label class="col-sm-2" for="titre">Prix :</label>
-					    <input type="number" step="0.01" class="col-sm-2" name="prix" required  value="<?php echo $prix ?>">
-					     <input type="text" class="col-sm-4" name="libprix" required  value="<?php echo $libprix ?>">
+						<label class="col-sm-1" for="titre">Titre :</label>
+					    <input type="text" class="col-sm-11" name="titre" required  value="<?php echo $titre ?>">
 					</div>
 					
 					<div class="form-group">
-						<label for="accroche">Description :</label><br>
-		           		<textarea class="col-sm-11" name="description" id="description" rows="6" ><?php echo $description ?></textarea>
+						<label for="accroche">Contenu :</label><br>
+		           		<textarea class="col-sm-11" name="contenu" id="contenu" rows="5" ><?php echo $contenu ?></textarea>
 		            </div>
+		            
 		            <div class="form-group" >
-						<label class="col-sm-2" for="titre">Titre encard Vert. :</label>
-					    <input type="text" class="col-sm-4" name="titreaccroche" required  value="<?php echo $titreaccroche ?>">
-					</div>
-		            <div class="form-group">
-						<label for="accroche">Encart Vert :</label><br>
-		           		<textarea class="col-sm-11" name="accroche" id="accroche" rows="3" ><?php echo $accroche ?></textarea>
-		            </div>
+						<label for="accroche">Lien vers produit ou page du site :</label><br>
+		           		<input class="col-sm-8"  name="accroche"  id="accroche" value="<?php echo $accroche ?>" />
+		            </div> 
+		           
 		            <div class="form-group"><br>
-						<label  for="titre">Choisissez les photos du produit: </label>
+						<label  for="titre">Choisissez la photos </label>
 						<input type="hidden"  name="idImage"  id="idImage" value="">
 					</div>	
 				
-						<?php for ($i=1;$i<4;$i++) {?>
+						<?php for ($i=1;$i<2;$i++) {?>
 							<div class="col-md-4">
 						<input type="hidden"  name="url<?php echo $i ?>"  id="url<?php echo $i ?>" value="<?php echo $imgval[$i]?>"><br>
             			<a href="javascript:openCustomRoxy('<?php echo $i ?>')"><img  src="<?php echo $img[$i]?>" id="customRoxyImage<?php echo $i ?>" style="max-width:200px;"></a>
@@ -142,41 +123,8 @@ if (!empty($_GET)){ //Modif
 						}
 						
 					</script>
-					
-					
-					<table class="table table-hover table-bordered table-condensed table-striped" >
-						<thead>
-							<tr>
-								<th class="col-md-12"  colspan="2">
-									Cochez les catégories auquelles le produit appartient :
-								</th>
-							</tr>
-						</thead>
-						
-						<tbody>
-							<?php 
-							if (!empty($resultCat)) {
-								$i=0;
-								foreach ($resultCat as $value) { 
-									$decalage = "";
-									for ($i=0; $i<($value['level'] * 10); $i++) {
-										$decalage .= "&nbsp;";
-									}
-								$i++;
-								(!empty($categories) && in_array($value['id'], $categories)) ? $check = 'checked' : $check = '';
-								?>
-								<tr class="<?php if ($value['level']==0) echo 'info';  if ($value['level']==1) echo 'success';?>">
-									<td><input type="checkbox"  name="categories[]" value="<?php echo $value['id'] ?>" <?php echo $check ?>></td>
-									<td><?php echo $decalage.$value['label']?></td>
-								</tr>
-								<?php } ?>
-							<?php } ?>	
-						</tbody>
-					</table>
-					
-					<div class="form-group">
-		            	<button class="btn btn-success col-sm-12" type="submit" class="btn btn-default"> Valider </button>
-		            </div>
+		            <button class="btn btn-success col-sm-12" type="submit" class="btn btn-default"> Valider </button>
+		            
 					<script type="text/javascript">
 						tinymce.init({
 						selector: "textarea.editme",

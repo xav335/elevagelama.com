@@ -1,9 +1,9 @@
+<?php include_once '../inc/inc.config.php'; ?>
 <?php include_once 'inc-auth-granted.php';?>
 <?php include_once 'classes/utils.php';?>
 <?php include_once 'classes/pagination.php';?>
 <?php 
-	require( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/inc.config.php" );
-	require 'classes/Contact.php';
+require 'classes/Contact.php';
 
 	$contact = new Contact();
 	

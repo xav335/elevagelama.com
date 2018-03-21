@@ -9,12 +9,10 @@
 <link href="/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 <link href="/admin/js/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css">
 <link href="/admin/css/pagination.css" media="screen" rel="stylesheet" type="text/css">
-
 <!-- Scripts -->
-<!--<script type="text/javascript" src="/admin/js/custom.js"></script>-->
+<script type="text/javascript" src="/admin/js/custom.js"></script>
 <!--[if lt IE 9]><script type="text/javascript" src="/admin/js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script type="text/javascript" src="/admin/js/respond.min.js"></script><![endif]-->
-
 <script type="text/javascript" src="/admin/js/jquery.min.js"></script>
 <script type="text/javascript" src="/admin/js/bootstrap.min.js"></script>
 

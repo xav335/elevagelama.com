@@ -1,16 +1,16 @@
 <?
-
-    function randomChar($val=12) {
-        $characts = 'abcdefghijklmnopqrstuvwxyz';
-        $characts .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $characts .= '1234567890';
-        $code_aleatoire = '';
-    
-        for($i=0;$i < $val;$i++)
-        {
-            $code_aleatoire .= $characts[ rand() % strlen($characts) ];
-    }
-    		return $code_aleatoire;
+	
+	function randomChar($val=12) {
+		$characts = 'abcdefghijklmnopqrstuvwxyz';
+		$characts .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		$characts .= '1234567890';
+		$code_aleatoire = '';
+	
+		for($i=0;$i < $val;$i++)
+		{
+		$code_aleatoire .= $characts[ rand() % strlen($characts) ];
+		}
+		return $code_aleatoire;
 	}
 	// Génération d'un nom de fichier temporaire aléatoire
 	function aleatoire($val=64) {
@@ -179,42 +179,6 @@
 		echo "<pre>";
 		print_r( $tab );
 		echo "</pre>";
-	}
-	
-	function supprimer_balise( $texte='' ) {
-		
-		$texte = str_replace( "\\", "", $texte );
-		
-		// Suppression des balises communes
-		$texte = preg_replace( "#<[\w=\#\"\(\): .;/,+-]*>#", " ", $texte );
-		
-		// Suppression des espaces en début & fin de texte
-		$texte = trim( $texte );
-		
-		// Suppression des retours chariots et autres
-		$texte = preg_replace( "#[\t\n\r]+#", " ", $texte );
-		
-		// Suppression des multiples espaces
-		$texte = preg_replace( "# {2,10}#", " ", $texte );
-		return $texte;
-	}
-	
-	// ---- Permet de ne pas couper une chaine en milieu de mot (par exemple...)
-	function couper_correctement( $chaine='', $longueur=0, $element=' ', $debug=false ) {
-		if ( $debug ) echo "0 -  : " . $chaine . " / '" . $element . "'<br><br>";
-		
-		$chaine = substr( $chaine, 0, $longueur );
-		if ( $debug ) echo "1 -  : " . $chaine . "<br><br>";
-		
-		if ( strlen( $chaine ) > $longueur ) {
-			$pos = strripos( $chaine, $element );
-			if ( $debug ) echo "2 -  : " . $pos . "<br><br>";
-			
-			$chaine = substr( $chaine, 0, $pos );
-		}
-		if ( $debug ) echo "-->" . $chaine . "<br><br><br>";
-		
-		return $chaine;
 	}
 	
 ?>

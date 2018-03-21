@@ -6,11 +6,10 @@ class News extends StorageManager {
 
 	}
 	
-	public function newsList( $debug=false ){
+	public function newsValidGet(){
 		$this->dbConnect();
-		$requete = "SELECT * FROM `news` ORDER BY `date_news` DESC" ;
-		if ( $debug ) echo $requete . "<br>";
-		
+		$requete = "SELECT * FROM `news` WHERE online=1 ORDER BY `date_news` DESC" ;
+		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
 		while( $row = mysqli_fetch_assoc( $result)){
@@ -20,30 +19,15 @@ class News extends StorageManager {
 		return $new_array;
 	}
 	
-	public function newsValidGet( $debug=false ){
-		$this->dbConnect();
-		$requete = "SELECT * FROM `news` WHERE accueil=1 ORDER BY `date_news` DESC" ;
-		if ( $debug ) echo $requete . "<br>";
-		
-		$new_array = null;
-		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
-			$new_array[] = $row;
-		}
-		$this->dbDisConnect();
-		return $new_array;
-	}
 	
-	public function newsGet( $id, $debug=false ){
-		$this->dbConnect();
-		if ( !isset( $id ) || intval( $id ) <= 0 ) {
+	public function newsGet($id){
+		 $this->dbConnect();
+		if (!isset($id)){
 			$requete = "SELECT * FROM `news` ORDER BY date_news DESC" ;
-		} 
-		else {
+		} else {
 			$requete = "SELECT * FROM `news` WHERE id_news=". $id ;
 		}
-		
-		if ( $debug ) echo $requete . "<br>";
+		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
 		while( $row = mysqli_fetch_assoc( $result)){
@@ -53,45 +37,33 @@ class News extends StorageManager {
 		return $new_array;
 	}
 	
-	private function initNews( $debug=false ) {
-		$requete = "UPDATE `news` SET `accueil` = 0" ;
-		if ( $debug ) echo $requete . "<br>";
-		$result = mysqli_query( $this->mysqli, $requete );
-	}
-	
-	public function newsAdd( $value, $debug=false ) {
-		$this->dbConnect();
+	public function newsAdd($value){
+		//print_r($value);
+		//exit();
+		 $this->dbConnect();
 		$this->begin();
 		
 		try {
-			($value['accueil']=='on') ? $accueil = 1 : $accueil = 0;
-			
-			// ---- Initialisation de l'affichage en page d'accueil ------------------ //
-			if ( $accueil == 1 ) $this->initNews( $debug );
-			
+			($value['online']=='on') ? $online = 1 : $online = 0;
 			$sql = "INSERT INTO  `news`
-				(`date_news`, `titre`, `image1`, `contenu`, `accueil`)
-				VALUES (
-				'". $this->inserer_date($value['datepicker']) ."', 
-				'". addslashes($value['titre']) ."',
-				'". addslashes($value['url1']) ."',
-				'". addslashes($value['contenu']) ."',
-				". $accueil ." 	
-			);";
+						(`date_news`, `titre`, `accroche`, `image1`, `contenu`, `online`)
+						VALUES (
+						'". $this->inserer_date($value['datepicker']) ."', 
+						'". addslashes($value['titre']) ."',
+						'". addslashes($value['accroche']) ."',
+						'". addslashes($value['url1']) ."',
+						'". addslashes($value['contenu']) ."',
+						". $online ." 	
+					);";
+			$result = mysqli_query($this->mysqli,$sql);
 			
-			if ( $debug ) echo $sql . "<br>";
-			else {
-				$result = mysqli_query($this->mysqli,$sql);
-				
-				if (!$result) {
-					throw new Exception($sql);
-				}
-				$id_record = mysqli_insert_id($this->mysqli);
-				$this->commit();
+			if (!$result) {
+				throw new Exception($sql);
 			}
+			$id_record = mysqli_insert_id($this->mysqli);
+			$this->commit();
 		
-		} 
-		catch (Exception $e) {
+		} catch (Exception $e) {
 			$this->rollback();
 			throw new Exception("Erreur Mysql ". $e->getMessage());
 			return "errrrrrrooooOOor";
@@ -100,33 +72,29 @@ class News extends StorageManager {
 		return $id_record;
 	}
 	
-	public function newsModify( $value, $debug=false ) {
-		$this->dbConnect();
+	public function newsModify($value){
+		//print_r($value);
+		//exit();
+		
+		 $this->dbConnect();
 		$this->begin();
 		try {
-			($value['accueil']=='on') ? $accueil = 1 : $accueil = 0;
-			
-			// ---- Initialisation de l'affichage en page d'accueil ------------------ //
-			if ( $accueil == 1 ) $this->initNews( $debug );
-			
+			($value['online']=='on') ? $online = 1 : $online = 0;
 			$sql = "UPDATE  .`news` SET
-				`date_news`='". $this->inserer_date($value['datepicker']) ."', 
-				`titre`='". addslashes($value['titre']) ."', 
-				`image1`='". addslashes($value['url1']) ."',
-				`contenu`='". addslashes($value['contenu']) ."',
-				`accueil`=". $accueil ."		 
-				WHERE `id_news`=". $value['id'] .";";
-			
-			if ( $debug ) echo $sql . "<br>";
-			else {
+					`date_news`='". $this->inserer_date($value['datepicker']) ."', 
+					`titre`='". addslashes($value['titre']) ."', 
+					`accroche`='". addslashes($value['accroche']) ."', 
+					`image1`='". addslashes($value['url1']) ."',
+					`contenu`='". addslashes($value['contenu']) ."',
+					`online`=". $online ."		 
+					WHERE `id_news`=". $value['id'] .";";
 			$result = mysqli_query($this->mysqli,$sql);
-				
-				if (!$result) {
-					throw new Exception($sql);
-				}
 			
-				$this->commit();
+			if (!$result) {
+				throw new Exception($sql);
 			}
+		
+			$this->commit();
 		
 		} catch (Exception $e) {
 			$this->rollback();
@@ -164,5 +132,6 @@ class News extends StorageManager {
 	
 		$this->dbDisConnect();
 	}
+	
 	
 }

@@ -111,18 +111,9 @@
              
             </div>
             <div class="large-6 medium-6 small-12 cell">
-                <div id="div_success" class="large-12 medium-12 small-12 columns <?=$affichage_success?>">
-					<h3>Félicitations!</h3>
-					<p>Votre message a été envoyé avec succès!</p>
-				</div>
-				
-				<div id="div_erreur" class="large-12 medium-12 small-12 columns <?=$affichage_erreur?>">
-					<h3>Erreur!</h3>
-					<p>
-						Une erreur s'est produite lors de l'envoi de votre message.<br>
-						Veuillez essayer ultérieurement.
-					</p>
-				</div>
+                <div id="resultat" class="resultat">
+		
+    	       </div>
             
               <form id="formulaire" class="row contact" method="post" action="contactez-nous.php">
                 <input type="hidden" name="mon_action" id="mon_action" value="" />
@@ -141,7 +132,7 @@
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Téléphone</span>
-                  <div class="large-9 medium-9 small-12"><input type="tel" name="telephone" value="" placeholder="Mon téléphone" required></div>
+                  <div class="large-9 medium-9 small-12"><input type="tel" name="tel" value="" placeholder="Mon téléphone" required></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Mon message</span>
@@ -152,6 +143,9 @@
                   <div class="large-9 medium-9 small-12 text-right"><input type="submit" value="Envoyer"></div>
                 </label>
               </form>
+              <div id="resultat" class="resultat">
+		
+    	       </div>
             </div>
           </div>                                               
         </div>
@@ -159,54 +153,47 @@
     </main>
 
     <?php include('inc/footer.php'); ?>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCY06G9zKfwNxkjbIqSINobogSDC0CZQJQ"></script>
 		<script>
-			var map;
-			function initialize() {
+        	$(document).ready(function(){
+          		$('#menu li:last-child').addClass('active');
+          		$('#menu li li:first-child').removeClass('active');
+        	});
 
-				var mapOptions = {
-					mapTypeId: google.maps.MapTypeId.ROADMAP,
-					mapTypeControl: false,
-					zoom: 10,
-					zoomControl: true,
-					zoomControlOptions: {
-						style: google.maps.ZoomControlStyle.SMALL,
-						position: google.maps.ControlPosition.BOTTOM_RIGHT
-					},
-					panControl: false,
-					streetViewControl: false,
-					scaleControl: false,
-					overviewMapControl: false,
-					center: new google.maps.LatLng(45.15056901, -0.5758809999999812)
-				};
+        	//-- FORMULAIRE DE CONTACT --//
+        	$(document).on('submit','#formulaire',function(e) {
+      		  e.preventDefault();
+      		  data = $(this).serializeArray();
 
-				map = new google.maps.Map(document.getElementById('map-canvas'),
-					mapOptions);
+      		  data.push({
+      		   		name: 'action',
+      		    	value: 'sendMail'
+      		  	})
 
-				var icon = {
-					path: 'M16.5,51s-16.5-25.119-16.5-34.327c0-9.2082,7.3873-16.673,16.5-16.673,9.113,0,16.5,7.4648,16.5,16.673,0,9.208-16.5,34.327-16.5,34.327zm0-27.462c3.7523,0,6.7941-3.0737,6.7941-6.8654,0-3.7916-3.0418-6.8654-6.7941-6.8654s-6.7941,3.0737-6.7941,6.8654c0,3.7916,3.0418,6.8654,6.7941,6.8654z',
-					anchor: new google.maps.Point(16.5, 51),
-					fillColor: '#000000',
-					fillOpacity: 0.6,
-					strokeWeight: 0,
-					scale: 0.66
-				};
+      		  console.log(data);
 
-				var marker = new google.maps.Marker({
-					position: new google.maps.LatLng(45.15056901, -0.5758809999999812),
-					map: map,
-					icon: icon,
-					title: 'marker'
-				});
-			}
-
-			google.maps.event.addDomListener(window, 'load', initialize);
-
-        $(document).ready(function(){
-          $('#menu li:last-child').addClass('active');
-          $('#menu li li:first-child').removeClass('active');
-        });
-      </script>
+      		    /* I put the above code for check data before send to ajax*/
+      		    $.ajax({
+      			        url: '/ajax/contact.php',
+      			        type: 'post',
+      			        data: data,
+      			        success: function (data) {
+      			            $("#resultat").html("<h3>Merci pour votre message <br> Nous allons y donner suite très vite</h3>");
+      			        	$("#nom").val("");
+      			        	$("#email").val("");
+      			        	$("#tel").val("");
+      			           	$("#message").val("");
+      			        },
+      			        error: function() {
+      			        	 $("#resultat").html("<h3>Une erreur s'est produite !</h3>");
+      			        }
+      			   	});
+      		return false;
+      		})
+      		
+      		//-- FORMULAIRE DE CONTACT --//
+      		
+      		
+      	</script>
 
   </body>
 </html>

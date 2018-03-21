@@ -63,7 +63,7 @@
           <div class="grid-x grid-padding-x bg-darkest">
             <div class="large-9 medium-8 small-12 cell edito">
               <div>
-                <p>Agréé Ferme de découverte et pédagogique par le réseau  Bienvenue à la Ferme  et l’Inspection académique nous recevons en visite les groupes scolaires, centre de loisirs et le Grand Public</p>
+                <p>Agréés Ferme de découverte et pédagogique par le réseau  Bienvenue à la Ferme  et l’Inspection académique nous recevons en visite les groupes scolaires, centre de loisirs et le Grand Public</p>
                 <p>Au sein de notre élevage professionnel situé en Haute-Gironde,<br/>
                   nous nous destinons également à la production de crias de qualité (petits lamas).</p>
                 <p class="signature">Florence et Joël Planteur</p>
