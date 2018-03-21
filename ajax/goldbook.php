@@ -37,10 +37,10 @@ if ($_POST[ "action" ] == "sendMail") {
     $_to = ( MAIL_TEST != '' )
     	? MAIL_TEST
     	: MAIL_CONTACT;
-    $sujet = MAIL_NAME_CUSTOMER . " - Nv message Livre d'or ";
+    $sujet = MAILNAMECUSTOMER . " - Nv message Livre d'or ";
     // echo "Envoi du message à " . $_to . "<br>";
     
-    $entete = "From:" . MAIL_NAME_CUSTOMER . " <" . MAIL_CUSTOMER . ">\n";
+    $entete = "From:" . $_POST[ "name" ] . " <" . $_POST[ "email" ] . ">\n";
     $entete .= "MIME-version: 1.0\n";
     $entete .= "Content-type: text/html; charset= utf-8\n";
     $entete .= "Bcc: " . MAIL_BCC . "\n";
