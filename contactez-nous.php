@@ -128,7 +128,7 @@
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Nom Prénom</span>
-                  <div class="large-9 medium-9 small-12"><input type="text" name="nom" id="nom" value="" placeholder="Mes nom et prénom" required></div>
+                  <div class="large-9 medium-9 small-12"><input type="text" name="name" id="nom" value="" placeholder="Mes nom et prénom" required></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Téléphone</span>
