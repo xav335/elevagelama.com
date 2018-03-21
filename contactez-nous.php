@@ -124,19 +124,19 @@
                 </p>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">E-mail principal</span>
-                  <div class="large-9 medium-9 small-12"><input type="email" name="email" value="" placeholder="adresse@mail.com" required></div>
+                  <div class="large-9 medium-9 small-12"><input type="email" name="email" id="email" value="" placeholder="adresse@mail.com" required></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Nom Prénom</span>
-                  <div class="large-9 medium-9 small-12"><input type="text" name="nom" value="" placeholder="Mes nom et prénom" required></div>
+                  <div class="large-9 medium-9 small-12"><input type="text" name="nom" id="nom" value="" placeholder="Mes nom et prénom" required></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Téléphone</span>
-                  <div class="large-9 medium-9 small-12"><input type="tel" name="tel" value="" placeholder="Mon téléphone" required></div>
+                  <div class="large-9 medium-9 small-12"><input type="tel" name="tel" id="tel" value="" placeholder="Mon téléphone" required></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Mon message</span>
-                  <div class="large-9 medium-9 small-12"><textarea name="message" rows="5" placeholder="Mon message" required></textarea></div>
+                  <div class="large-9 medium-9 small-12"><textarea name="message" id="message" rows="5" placeholder="Mon message" required></textarea></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12"> </span>
