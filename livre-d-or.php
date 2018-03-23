@@ -42,15 +42,15 @@
                 </p>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">E-mail principal</span>
-                  <div class="large-9 medium-9 small-12"><input type="email" name="email" id="email" value="" placeholder="adresse@mail.com"></div>
+                  <div class="large-9 medium-9 small-12"><input type="email" name="email" id="email" value="" required  placeholder="adresse@mail.com"></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Nom Prénom</span>
-                  <div class="large-9 medium-9 small-12"><input type="text" name="name" id="nom" value="" placeholder="Mon nom et prénom"></div>
+                  <div class="large-9 medium-9 small-12"><input type="text" name="name" id="nom" value= "" required  placeholder="Mon nom et prénom"></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Mon message</span>
-                  <div class="large-9 medium-9 small-12"><textarea name="message" id="message" rows="5" placeholder="Mon message"></textarea></div>
+                  <div class="large-9 medium-9 small-12"><textarea name="message" id="message" rows="5" required  placeholder="Mon message"></textarea></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12"> </span>
