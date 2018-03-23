@@ -51,7 +51,7 @@
 	
 	// ---- Mail d'envoi
 	//define( "MAIL_TEST", 	"fjavi.gonzalez@gmail.com" ); 	// Si rempli alors cette valeur sera utilisée pour les différents envois de mails
-	define( "MAIL_TEST", 	"fjavi.gonzalez@gmail.com" ); // Tester la qualité du mail (https://www.mail-tester.com)
-	define( "MAIL_CONTACT", "contact@elevagelama.fr" ); //elevagelama.m@orange.fr
+	define( "MAIL_TEST", 	"" ); // Tester la qualité du mail (https://www.mail-tester.com)
+	define( "MAIL_CONTACT", "planteur.joel@orange.fr" ); //elevagelama.m@orange.fr
 	define( "MAIL_BCC", 	"xav335@hotmail.com,fjavi.gonzalez@gmail.com,jav_gonz@yahoo.com" );
 ?>

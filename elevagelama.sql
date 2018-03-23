@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.21, for osx10.6 (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.58, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: elevagelama
 -- ------------------------------------------------------
--- Server version	5.6.21
+-- Server version	5.5.58-0+deb8u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -59,7 +59,7 @@ CREATE TABLE `contact` (
   `fromcontact` tinyint(4) NOT NULL DEFAULT '0',
   `message` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `contact` (
 
 LOCK TABLES `contact` WRITE;
 /*!40000 ALTER TABLE `contact` DISABLE KEYS */;
-INSERT INTO `contact` VALUES (3,'','Gregorio Gonzalez','fjavi.gonzalez@gmail.com',NULL,0,0,1,NULL);
+INSERT INTO `contact` VALUES (4,'','','fjavi.gonzalez@gmail.com',NULL,0,0,1,NULL),(5,'','PLANTEUR Joël','planteur.joel@orange.fr',NULL,0,0,1,NULL),(6,'','Anne-marie','',NULL,0,1,0,NULL);
 /*!40000 ALTER TABLE `contact` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,7 +87,7 @@ CREATE TABLE `goldbook` (
   `message` text,
   `online` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,7 +96,7 @@ CREATE TABLE `goldbook` (
 
 LOCK TABLES `goldbook` WRITE;
 /*!40000 ALTER TABLE `goldbook` DISABLE KEYS */;
-INSERT INTO `goldbook` VALUES (1,'0000-00-00 00:00:00','Gregorio Gonzalez','fjavi.gonzalez@gmail.com','efzfzefzfze ',0);
+INSERT INTO `goldbook` VALUES (1,'0000-00-00 00:00:00','Gregorio Gonzalez','fjavi.gonzalez@gmail.com','efzfzefzfze ',0),(2,'0000-00-00 00:00:00','Anne-marie','','Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs  - une belle journée de découverte pour enfants et adultes.',0);
 /*!40000 ALTER TABLE `goldbook` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -137,4 +137,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-21 18:54:50
+-- Dump completed on 2018-03-23 16:08:03
