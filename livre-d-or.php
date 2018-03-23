@@ -14,6 +14,10 @@
               <h2>LIVRE D'OR</h2>
             </div>
             <div class="large-6 medium-6 small-12 cell">
+	      <h3>Anne-marie</h3>
+              	<p>
+                  Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs - une belle journée de découverte pour enfants et  adultes
+          	</p>	
               <h3>Xavier</h3>
               <p>
                   Une visite très agréable et un accueil excellent, les enfants étaient enchantés.
