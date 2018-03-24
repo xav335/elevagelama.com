@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.58, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.6.21, for osx10.6 (x86_64)
 --
 -- Host: localhost    Database: elevagelama
 -- ------------------------------------------------------
--- Server version	5.5.58-0+deb8u1
+-- Server version	5.6.21
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (1,'escalinox','escalinox33','administrateur'),(2,'admin','admin335','ico');
+INSERT INTO `admin` VALUES (1,'lama','lama33','administrateur'),(2,'admin','admin335','ico');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -59,7 +59,7 @@ CREATE TABLE `contact` (
   `fromcontact` tinyint(4) NOT NULL DEFAULT '0',
   `message` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `contact` (
 
 LOCK TABLES `contact` WRITE;
 /*!40000 ALTER TABLE `contact` DISABLE KEYS */;
-INSERT INTO `contact` VALUES (4,'','','fjavi.gonzalez@gmail.com',NULL,0,0,1,NULL),(5,'','PLANTEUR Joël','planteur.joel@orange.fr',NULL,0,0,1,NULL),(6,'','Anne-marie','',NULL,0,1,0,NULL);
+INSERT INTO `contact` VALUES (4,'','','fjavi.gonzalez@gmail.com',NULL,0,0,1,NULL),(5,'','PLANTEUR Joël','planteur.joel@orange.fr',NULL,0,0,1,NULL),(6,'','Anne-marie','',NULL,0,1,0,'Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs  - une belle journée de découverte pour enfants et adultes.'),(10,'','Anne-marie','',NULL,0,0,0,NULL);
 /*!40000 ALTER TABLE `contact` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,7 +87,7 @@ CREATE TABLE `goldbook` (
   `message` text,
   `online` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,7 +96,7 @@ CREATE TABLE `goldbook` (
 
 LOCK TABLES `goldbook` WRITE;
 /*!40000 ALTER TABLE `goldbook` DISABLE KEYS */;
-INSERT INTO `goldbook` VALUES (1,'0000-00-00 00:00:00','Gregorio Gonzalez','fjavi.gonzalez@gmail.com','efzfzefzfze ',0),(2,'0000-00-00 00:00:00','Anne-marie','','Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs  - une belle journée de découverte pour enfants et adultes.',0);
+INSERT INTO `goldbook` VALUES (2,'2018-03-31 00:00:00','Anne-marie',' ','Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs  - une belle journée de découverte pour enfants et adultes.',1),(3,'2018-03-08 00:00:00','Xavier','fjavi.gonzalez@gmail.com','Une visite très agréable et un accueil excellent, les enfants étaient enchantés.',1),(4,'2018-03-09 00:00:00','Andrea G. Collège de Latresne',' ','Une visite pédagogique très instructive, nos classes de 6ème et de 5ème ont été enchantés. Je recommande !',1),(5,'2018-03-11 00:00:00','Gregoire B.',' ','Des animaux très attachants élévés par des pationnés,Idéal pour une sortie éducative et ludique avec tous d\'activités pour les enfants et les adultes.',1);
 /*!40000 ALTER TABLE `goldbook` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,12 +110,13 @@ DROP TABLE IF EXISTS `news`;
 CREATE TABLE `news` (
   `id_news` int(11) NOT NULL AUTO_INCREMENT,
   `date_news` date NOT NULL,
+  `accroche` text,
   `titre` varchar(250) NOT NULL,
   `contenu` text,
   `image1` varchar(250) DEFAULT NULL,
-  `accueil` tinyint(4) NOT NULL DEFAULT '0',
+  `online` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_news`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,7 +125,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (31,'2016-05-27','Découvrez notre nouveau site internet','Bienvenue sur notre nouveau site internet.\r\n\r\nVous pourrez y découvrir la présentation de notre entreprise et notre savoir faire.\r\nToutes nos réalisations n\'apparaissent pas sur le site.\r\nN\'hésitez pas à nous contacter pour toutes demandes particulières.\r\n\r\nBonne navigation à tous','/www-31.jpg',1);
+INSERT INTO `news` VALUES (31,'2018-02-22','','DATE VISITE DE L’ÉLEVAGE','A l\'occasion des vacances scolaires de Février, nous organisons une deuxième visite de notre élevage pour \"le grand public\" le <b>jeudi 22 février 2018</b>. \r\nDépart de la visite : 15h00 - durée: 01h30 \r\nLa météo devrait être favorable - prévoir chaussures étanches, prairies humides. \r\nTél. 05 57 42 20 61 ou 06 20 89 70 15\r\n','/Screenshot_2018_03_24_10.44.32-31.png',1),(32,'2017-12-28','','ATELIER SUPPLÉMENTAIRE POUR LES ÉCOLES PRIMAIRES.','En plus de nos ateliers existants, nous créons actuellement un atelier dont le thème est l\'AMÉRIQUE DU SUD. Dans quelques jours cet atelier figurera sur notre fiche pédagogique (<a href=\"http://www.elevagelama.com/pdf/fichepedagogique.pdf\" target=\"_blank\">téléchargeable ici</a>) \r\nPour l\'instant, nous contacter.','',1),(34,'2016-04-19','','PUBLICATION DE NOTRE LIVRE ','Éros notre lama exceptionnel nous a quitté cette année. \r\nJoël lui rend hommage en racontant son histoire dans ce livre. Le manuscrit est disponible sur le site de l\'éditeur EDILIVRE par le lien suivant : <a href=\"http://www.edilivre.com/doc/759817\" target=\"_blank\">www.edilivre.com</a> Possibilité également de l\'acquerrir à la ferme.\r\n','/Screenshot_2018_03_24_10.47.00-.png',1),(35,'2017-06-13','','LAMA GARDIEN DE TROUPEAU','Dans le cadre de notre spécialité Lama Gardien de Troupeau, notre dernier lama sélectionné a été vendu. Pour toute demande, nous contacter pour une nouvelle sélection.\r\n\r\n','',1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -137,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-23 16:08:03
+-- Dump completed on 2018-03-24 12:04:37

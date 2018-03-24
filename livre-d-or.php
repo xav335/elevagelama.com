@@ -1,3 +1,13 @@
+<?php require_once 'inc/inc.config.php';?>
+<?php 
+require 'admin/classes/Goldbook.php';
+require 'admin/classes/utils.php';
+session_start();
+$goldbook = new Goldbook();
+$result = $goldbook->goldbookValidGet();
+$goldbook = null;
+//print_r($result);
+?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -14,22 +24,19 @@
               <h2>LIVRE D'OR</h2>
             </div>
             <div class="large-6 medium-6 small-12 cell">
-	      <h3>Anne-marie</h3>
-              	<p>
-                  Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs - une belle journée de découverte pour enfants et  adultes
-          	</p>	
-              <h3>Xavier</h3>
-              <p>
-                  Une visite très agréable et un accueil excellent, les enfants étaient enchantés.
-              </p>
-              <h3>Andrea G. Collège de Latresne</h3>
-              <p>
-                  Une viste pédagogique très instructive, nos classes de 6ème et de 5ème ont été enchantés. Je recommande !
-              </p>
-              <h3>Gregoire B.</h3>
-              <p>
-                  Des animaux très attachants élévés par des pationnés,Idéal pour une sortie éducative et ludique avec tous d'activités pour les enfants et les adultes.
-              </p>
+            <?php 
+				if (!empty($result)) {
+					$i=0;
+					foreach ($result as $value) { 
+					$i++;
+					?>
+					 <h3><?php echo $value['nom']?></h3>
+							<p>
+								<?php echo nl2br($value['message'])?>
+							</p>
+				<?php } ?>
+			<?php } ?>	
+            
             </div>
             <div class="large-6 medium-6 small-12 cell">
              <div id="resultat" class="resultat">

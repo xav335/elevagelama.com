@@ -26,7 +26,7 @@ if (!empty($_GET)){ //Modif
 		for ($i=1;$i<2;$i++) {
 			$image[$i] = 	$result[0]['image'.$i];
 			if(empty($image[$i]) || !isset($image[$i])){
-				$img[$i]  = '/img/favicon.png';
+				$img[$i]  = '/admin/img/favicon.png';
 				$imgval[$i]  = '';
 			} else {
 				$img[$i]  = '/photos/news/thumbs'. $image[$i];
@@ -44,7 +44,7 @@ if (!empty($_GET)){ //Modif
 	$contenu= 		null;
 	$online = 		null;
 	for ($i=1;$i<2;$i++) {
-		$img[$i]  = '/img/favicon.png';
+		$img[$i]  = '/admin/img/favicon.png';
 		$imgval[$i]  = '';
 	}
 }
@@ -118,7 +118,7 @@ if (!empty($_GET)){ //Modif
 						}
 	
 						function clearImage(idImage){
-							$('#customRoxyImage'+idImage).attr('src', '/img/favicon.png');
+							$('#customRoxyImage'+idImage).attr('src', '/admin/img/favicon.png');
 							$('#url'+idImage).val('');
 						}
 						

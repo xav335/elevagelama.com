@@ -12,7 +12,7 @@ class Goldbook extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while (($row = mysqli_fetch_assoc($result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -29,7 +29,7 @@ class Goldbook extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while (($row = mysqli_fetch_assoc($result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -42,7 +42,7 @@ class Goldbook extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while (($row = mysqli_fetch_assoc($result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();

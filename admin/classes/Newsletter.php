@@ -16,7 +16,7 @@ class Newsletter extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while (($row = mysqli_fetch_assoc($result)) != false) {
 			$new_array[] = $row;
 		}
 		
@@ -31,7 +31,7 @@ class Newsletter extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while (($row = mysqli_fetch_assoc($result)) != false) {
 			$new_arraydetail = null;
 			$requete = "SELECT * FROM `newsletter_detail` as nld
 						WHERE `id_newsletter`=". $row['id'] ." ORDER BY `id` ASC" ;
@@ -295,7 +295,7 @@ class Newsletter extends StorageManager {
 			//print_r($requete);
 			$new_array = null;
 			$result = mysqli_query($this->mysqli,$sql);
-			while( $row = mysqli_fetch_assoc( $result)){
+			 while (($row = mysqli_fetch_assoc($result)) != false) {
 				$new_array[] = $row;
 			}
 			$this->dbDisConnect();
@@ -320,7 +320,7 @@ class Newsletter extends StorageManager {
 			//print_r($sql);
 			$new_array = null;
 			$result = mysqli_query($this->mysqli,$sql);
-			while( $row = mysqli_fetch_assoc( $result)){
+			 while (($row = mysqli_fetch_assoc($result)) != false) {
 				$new_array[] = $row;
 			}
 			$this->dbDisConnect();
@@ -342,7 +342,7 @@ class Newsletter extends StorageManager {
 			//print_r($sql);
 			$new_array = null;
 			$result = mysqli_query($this->mysqli,$sql);
-			while( $row = mysqli_fetch_assoc( $result)){
+			 while (($row = mysqli_fetch_assoc($result)) != false) {
 				$new_array[] = $row;
 			}
 			$this->dbDisConnect();
