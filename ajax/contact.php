@@ -55,7 +55,7 @@ if ($_POST[ "action" ] == "sendMail") {
 	$entete .= "Reply-to: " . $_POST[ "email" ] . "\n";		
 	$corps = "";
 	if (!empty($idLama)){
-	   $corps .= "Demande de renseignement vente du lama n° ".$idLama." <br>";
+	   $corps .= "Demande de renseignement vente lama num: ".$idLama." <br>";
 	}
 	$corps .= "Nv message de :<br>" . utf8_decode( $_POST[ "name" ] . " ". $_POST[ "firstname" ] )  . " (" . $_POST[ "email" ] . ")<br>";
 	$corps .= "Tel : ". $_POST[ "tel" ] ."<br><br>";
