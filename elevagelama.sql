@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.21, for osx10.6 (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.58, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: elevagelama
 -- ------------------------------------------------------
--- Server version	5.6.21
+-- Server version	5.5.58-0+deb8u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `admin` (
   `mdp` varchar(30) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (1,'lama','lama33','administrateur'),(2,'admin','admin335','ico');
+INSERT INTO `admin` VALUES (1,'lama','lama33','administrateur'),(2,'admin','admin335','ico'),(3,'brandacot','brandacot33',NULL);
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -59,7 +59,7 @@ CREATE TABLE `contact` (
   `fromcontact` tinyint(4) NOT NULL DEFAULT '0',
   `message` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `contact` (
 
 LOCK TABLES `contact` WRITE;
 /*!40000 ALTER TABLE `contact` DISABLE KEYS */;
-INSERT INTO `contact` VALUES (4,'','','fjavi.gonzalez@gmail.com',NULL,0,0,1,NULL),(5,'','PLANTEUR Joël','planteur.joel@orange.fr',NULL,0,0,1,NULL),(6,'','Anne-marie','',NULL,0,1,0,'Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs  - une belle journée de découverte pour enfants et adultes.'),(10,'','Anne-marie','',NULL,0,0,0,NULL);
+INSERT INTO `contact` VALUES (4,'','','fjavi.gonzalez@gmail.com',NULL,0,0,1,NULL),(5,'','PLANTEUR Joël','planteur.joel@orange.fr',NULL,0,0,1,NULL),(6,'','Anne-marie','',NULL,0,1,0,'Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs  - une belle journée de découverte pour enfants et adultes.'),(10,'','Anne-marie','',NULL,0,0,0,NULL),(11,'','tiffany sawade','t.sawade@ari-accompagnement.fr',NULL,0,0,1,NULL),(12,'','christelle tauran','christ2l.tauran@gmail.com',NULL,0,0,1,NULL),(13,'','VIRGINIE FAURE','v.faure@grand-cubzaguais.fr',NULL,0,0,1,NULL),(14,'','BARRAL Béatrice','lesgentillescanailles@gmail.com',NULL,0,0,1,NULL),(15,'','GRANARA-BOURASSEAU Carine','carine.bourasseau@cegetel.net',NULL,0,0,1,NULL);
 /*!40000 ALTER TABLE `contact` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -116,7 +116,7 @@ CREATE TABLE `news` (
   `image1` varchar(250) DEFAULT NULL,
   `online` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_news`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +125,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (31,'2018-02-22','','DATE VISITE DE L’ÉLEVAGE','A l\'occasion des vacances scolaires de Février, nous organisons une deuxième visite de notre élevage pour \"le grand public\" le <b>jeudi 22 février 2018</b>. \r\nDépart de la visite : 15h00 - durée: 01h30 \r\nLa météo devrait être favorable - prévoir chaussures étanches, prairies humides. \r\nTél. 05 57 42 20 61 ou 06 20 89 70 15\r\n','/Screenshot_2018_03_24_10.44.32-31.png',1),(32,'2017-12-28','','ATELIER SUPPLÉMENTAIRE POUR LES ÉCOLES PRIMAIRES.','En plus de nos ateliers existants, nous créons actuellement un atelier dont le thème est l\'AMÉRIQUE DU SUD. Dans quelques jours cet atelier figurera sur notre fiche pédagogique (<a href=\"http://www.elevagelama.com/pdf/fichepedagogique.pdf\" target=\"_blank\">téléchargeable ici</a>) \r\nPour l\'instant, nous contacter.','',1),(34,'2016-04-19','','PUBLICATION DE NOTRE LIVRE ','Éros notre lama exceptionnel nous a quitté cette année. \r\nJoël lui rend hommage en racontant son histoire dans ce livre. Le manuscrit est disponible sur le site de l\'éditeur EDILIVRE par le lien suivant : <a href=\"http://www.edilivre.com/doc/759817\" target=\"_blank\">www.edilivre.com</a> Possibilité également de l\'acquerrir à la ferme.\r\n','/Screenshot_2018_03_24_10.47.00-.png',1),(35,'2017-06-13','','LAMA GARDIEN DE TROUPEAU','Dans le cadre de notre spécialité Lama Gardien de Troupeau, notre dernier lama sélectionné a été vendu. Pour toute demande, nous contacter pour une nouvelle sélection.\r\n\r\n','',1);
+INSERT INTO `news` VALUES (31,'2018-02-22','','DATE VISITE DE L’ÉLEVAGE','A l\'occasion des vacances scolaires de Février, nous organisons une deuxième visite de notre élevage pour \"le grand public\" le <b>jeudi 22 février 2018</b>. \r\nDépart de la visite : 15h00 - durée: 01h30 \r\nLa météo devrait être favorable - prévoir chaussures étanches, prairies humides. \r\nTél. 05 57 42 20 61 ou 06 20 89 70 15\r\n','/Screenshot_2018_03_24_10.44.32-31.png',0),(32,'2017-12-28','','ATELIER SUPPLÉMENTAIRE POUR LES ÉCOLES PRIMAIRES.','En plus de nos ateliers existants, nous créons actuellement un atelier dont le thème est l\'AMÉRIQUE DU SUD. Dans quelques jours cet atelier figurera sur notre fiche pédagogique (<a href=\"http://www.elevagelama.com/pdf/fichepedagogique.pdf\" target=\"_blank\">téléchargeable ici</a>) \r\nPour l\'instant, nous contacter.','',1),(34,'2016-04-19','','PUBLICATION DE NOTRE LIVRE ','Éros notre lama exceptionnel nous a quitté cette année. \r\nJoël lui rend hommage en racontant son histoire dans ce livre. Le manuscrit est disponible sur le site de l\'éditeur EDILIVRE par le lien suivant : <a href=\"http://www.edilivre.com/doc/759817\" target=\"_blank\">www.edilivre.com</a> Possibilité également de l\'acquerrir à la ferme.\r\n','/Screenshot_2018_03_24_10.47.00-.png',1),(35,'2017-06-13','','LAMA GARDIEN DE TROUPEAU','Dans le cadre de notre spécialité Lama Gardien de Troupeau, notre dernier lama sélectionné a été vendu. Pour toute demande, nous contacter pour une nouvelle sélection.\r\n\r\n','',1),(36,'2018-04-18','','VISITE DE L\'ELEVAGE','Le mercredi 18 avril 2018,  nous programmons pour le Grand Public une <b>visite de découverte</b> de notre élevage. \r\nDépart de la visite à 15h30 - durée:  01h30. \r\nTerrain humide prévoir chaussures étanches. \r\nPour tous renseignements nous contacter au 05 57 42 20 61 ou 06 20 89 70 15.','/Mai_2014_021-36.jpg',1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -138,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-24 12:04:37
+-- Dump completed on 2018-04-16 18:27:13
