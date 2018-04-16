@@ -7,6 +7,7 @@ session_start();
 $contact = new Contact();
 
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['action'] ."\n", 3, "../log/spy.log");
+error_log(date("Y-m-d H:i:s") ." : ". $_POST['idLama'] ."\n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['name'] ."\n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['firstname'] ."\n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['email'] ."\n", 3, "../log/spy.log");
@@ -14,6 +15,8 @@ error_log(date("Y-m-d H:i:s") ." : ". $_POST['tel'] ."\n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['sujet'] ."\n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['message'] ."\n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['newsletter'] ."\n", 3, "../log/spy.log");
+
+$idLama = $_POST['idLama'];
 
 if ($_POST[ "action" ] == "sendMail") {
 	
@@ -38,8 +41,12 @@ if ($_POST[ "action" ] == "sendMail") {
 	$_to = ( MAIL_TEST != '' )
     	? MAIL_TEST
     	: MAIL_CONTACT;
-	$sujet = MAILNAMECUSTOMER . " - Contact Site";
-	//echo "Envoi du message à " . $_to . "<br>";
+	
+	if (!empty($idLama)){
+	    $sujet = MAILNAMECUSTOMER . "  - Vente de Lama n° : ".$idLama;
+	}else{
+	    $sujet = MAILNAMECUSTOMER . " - Contact Site";
+	}
 		
 	$entete = "From:" . $_POST[ "name" ] . " <" .$_POST[ "email" ] . ">\n";
 	$entete .= "MIME-version: 1.0\n";
@@ -47,7 +54,9 @@ if ($_POST[ "action" ] == "sendMail") {
 	$entete .= "Bcc: ". MAIL_BCC ."\n";
 	$entete .= "Reply-to: " . $_POST[ "email" ] . "\n";		
 	$corps = "";
-	$corps .= "Bonjour,<br>";
+	if (!empty($idLama)){
+	   $corps .= "Demande de renseignement vente du lama n° ".$idLama." <br>";
+	}
 	$corps .= "Nv message de :<br>" . utf8_decode( $_POST[ "name" ] . " ". $_POST[ "firstname" ] )  . " (" . $_POST[ "email" ] . ")<br>";
 	$corps .= "Tel : ". $_POST[ "tel" ] ."<br><br>";
 	$corps .= "<b>Message :</b><br>";

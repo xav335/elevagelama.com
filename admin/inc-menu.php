@@ -25,6 +25,14 @@
 					          	</ul>
 					        </li>
 					         <li class="dropdown">
+					          	<a href="/admin/lamas-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Lamas en vente<span class="caret"></span></a>
+					          	<ul class="dropdown-menu" role="menu">
+					            	<li><a href="/admin/lamas-edit.php">Ajout vente lama</a></li>
+					            	<li><a href="/admin/lamas-list.php">Modif / Suppr</a></li>
+					            	<li class="divider"></li>
+					          	</ul>
+					        </li>
+					         <li class="dropdown">
 					          	<a href="/admin/contact-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contacts <span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">
 					            	<li><a href="/admin/contact-edit.php">Ajout</a></li>
@@ -33,14 +41,7 @@
 					            	<li><a href="/admin/contact-import.php">Import / Export</a></li>
 					          	</ul>
 					        </li>
-	                        <li class="dropdown">
-					          	<a href="/admin/lamas-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Lamas en vente<span class="caret"></span></a>
-					          	<ul class="dropdown-menu" role="menu">
-					            	<li><a href="/admin/lama-edit.php">Ajout vente lama</a></li>
-					            	<li><a href="/admin/lama-list.php">Modif / Suppr / Envoi</a></li>
-					            	<li class="divider"></li>
-					          	</ul>
-					        </li>
+	                       
 	                    </ul>
                     </div> 
                     <div class="col-md-1 collapse navbar-collapse">

@@ -83,7 +83,7 @@ if (!empty($_GET)){
                   <?php
                   	}
                   	} else {
-                  		echo 'Pas de message pour l\'instant';
+                  		echo 'Pas d\'actus pour l\'instant';
                   	}
                   ?>
                 </div>

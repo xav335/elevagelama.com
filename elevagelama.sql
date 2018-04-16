@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.58, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.6.21, for osx10.6 (x86_64)
 --
 -- Host: localhost    Database: elevagelama
 -- ------------------------------------------------------
--- Server version	5.5.58-0+deb8u1
+-- Server version	5.6.21
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -59,7 +59,7 @@ CREATE TABLE `contact` (
   `fromcontact` tinyint(4) NOT NULL DEFAULT '0',
   `message` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `contact` (
 
 LOCK TABLES `contact` WRITE;
 /*!40000 ALTER TABLE `contact` DISABLE KEYS */;
-INSERT INTO `contact` VALUES (4,'','','fjavi.gonzalez@gmail.com',NULL,0,0,1,NULL),(5,'','PLANTEUR Joël','planteur.joel@orange.fr',NULL,0,0,1,NULL),(6,'','Anne-marie','',NULL,0,1,0,'Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs  - une belle journée de découverte pour enfants et adultes.'),(10,'','Anne-marie','',NULL,0,0,0,NULL),(11,'','tiffany sawade','t.sawade@ari-accompagnement.fr',NULL,0,0,1,NULL),(12,'','christelle tauran','christ2l.tauran@gmail.com',NULL,0,0,1,NULL),(13,'','VIRGINIE FAURE','v.faure@grand-cubzaguais.fr',NULL,0,0,1,NULL),(14,'','BARRAL Béatrice','lesgentillescanailles@gmail.com',NULL,0,0,1,NULL),(15,'','GRANARA-BOURASSEAU Carine','carine.bourasseau@cegetel.net',NULL,0,0,1,NULL);
+INSERT INTO `contact` VALUES (11,'','tiffany sawade','t.sawade@ari-accompagnement.fr',NULL,0,0,1,NULL),(12,'','christelle tauran','christ2l.tauran@gmail.com',NULL,0,0,1,NULL),(13,'','VIRGINIE FAURE','v.faure@grand-cubzaguais.fr',NULL,0,0,1,NULL),(14,'','BARRAL Béatrice','lesgentillescanailles@gmail.com',NULL,0,0,1,NULL),(15,'','GRANARA-BOURASSEAU Carine','carine.bourasseau@cegetel.net',NULL,0,0,1,NULL),(20,'Gregorio','Gonzalez','fjavi.gonzalez@gmail.com',NULL,0,0,0,NULL),(21,'Javier','GONZALEZ','fjavi.gonz@gmail.com',NULL,0,0,0,NULL);
 /*!40000 ALTER TABLE `contact` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -98,6 +98,35 @@ LOCK TABLES `goldbook` WRITE;
 /*!40000 ALTER TABLE `goldbook` DISABLE KEYS */;
 INSERT INTO `goldbook` VALUES (2,'2018-03-31 00:00:00','Anne-marie',' ','Des animaux finalement méconnus, Joël éleveur passionné - des ateliers interactifs  - une belle journée de découverte pour enfants et adultes.',1),(3,'2018-03-08 00:00:00','Xavier','fjavi.gonzalez@gmail.com','Une visite très agréable et un accueil excellent, les enfants étaient enchantés.',1),(4,'2018-03-09 00:00:00','Andrea G. Collège de Latresne',' ','Une visite pédagogique très instructive, nos classes de 6ème et de 5ème ont été enchantés. Je recommande !',1),(5,'2018-03-11 00:00:00','Gregoire B.',' ','Des animaux très attachants élévés par des pationnés,Idéal pour une sortie éducative et ludique avec tous d\'activités pour les enfants et les adultes.',1);
 /*!40000 ALTER TABLE `goldbook` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `lamas`
+--
+
+DROP TABLE IF EXISTS `lamas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `lamas` (
+  `id_news` int(11) NOT NULL AUTO_INCREMENT,
+  `date_news` date NOT NULL,
+  `accroche` text,
+  `titre` varchar(250) NOT NULL,
+  `contenu` text,
+  `image1` varchar(250) DEFAULT NULL,
+  `online` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id_news`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `lamas`
+--
+
+LOCK TABLES `lamas` WRITE;
+/*!40000 ALTER TABLE `lamas` DISABLE KEYS */;
+INSERT INTO `lamas` VALUES (36,'2018-04-18','','Naissance de printemps','Un petit lama est né ce mardi bla blaUn petit lama est né ce mardi bla blaUn petit lama est né ce mardi bla blaardi bla blaUn petit lama est né ce mardi bla blaUn petit lama est né ce mardi bla blaUn petit lama est né ce mardi bla blaUn petit lama est né ce mardi bla bla','/Mai_2014_021-36.jpg',0);
+/*!40000 ALTER TABLE `lamas` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -138,4 +167,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-16 18:27:13
+-- Dump completed on 2018-04-16 22:43:22

@@ -6,14 +6,18 @@
 	
 	$debug = false;
 	
+	// ----------------------Vente lamas---------------------- //
+	
+	$idLama = $_GET['idLama'];
+	  
+	// ------------------------------------------------------- //
+	
+	
 	$contact = new Contact();
 	
 	$mon_action = $_POST[ "mon_action" ];
 	$anti_spam = $_POST[ "as" ];
 	//print_pre( $_POST );
-	
-	$affichage_success = "wait";
-	$affichage_erreur = "wait";
 	
 	// ---- Post du formulaire ------------------------------- //
 	if ( $mon_action == "poster" && $anti_spam == '' ) {
@@ -40,43 +44,9 @@
 		}
 		// ------------------------------------------- //
 		
-		// ---- Envoi du mail à l'admin -------------- //
-		if ( 1 == 1 ) {
-			$entete = "From:" . MAILNAMECUSTOMER . " <" . MAILCUSTOMER . ">\n";
-			$entete .= "MIME-version: 1.0\n";
-			$entete .= "Content-type: text/html; charset= iso-8859-1\n";
-			$entete .= "Bcc:" . MAIL_BCC . "\n";
-			//echo "Entete :<br>" . $entete . "<br><br>";
-			
-			$sujet = utf8_decode( "Prise de contact" );
-			
-			//$_to = "franck_langleron@hotmail.com";
-			$_to = ( MAIL_TEST != '' )
-		    	? MAIL_TEST
-		    	: MAIL_CONTACT;
-			//echo "Envoi du message à : " . $_to . "<br><br>";
-			
-			$message = "Bonjour,<br><br>";
-			$message .= "La personne suivante a rempli le formulaire de contact de votre site :<br>";
-			$message .= "Nom : <b>" . $_POST[ "nom" ] . " " . $_POST[ "prenom" ] . "</b><br>";
-			$message .= "E-mail / Téléphone : <b>" . $_POST[ "email" ] . " / " . $_POST[ "tel" ] . "</b><br>";
-			$message .= "Adresse postale : <b>" . $_POST[ "adresse" ] . ", " . $_POST[ "cp" ] . " " . $_POST[ "ville" ] . "</b><br>";
-			$message .= "Message : <br><i>" . nl2br( $_POST[ "message" ] ) . "</i><br><br>";
-			$message .= "Cordialement.";
-			$message = utf8_decode( $message );
-			if ( $debug ) echo $message;
-			
-			if ( !$debug ) $retour = mail( $_to, $sujet, stripslashes( $message ), $entete );
-			//exit();
-			
-			$affichage_success = ( $retour ) ? "" : "wait";
-			$affichage_erreur = ( $retour ) ? "wait" : "";
-		}
-		// ------------------------------------------- //
-		//exit();
-		
 	}
 	// ------------------------------------------------------- //
+	
 ?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
@@ -118,17 +88,37 @@
               <form id="formulaire" class="row contact" method="post" action="contactez-nous.php">
                 <input type="hidden" name="mon_action" id="mon_action" value="" />
 				<input type="hidden" name="as" value="" />
-                <h3>FORMULAIRE DE CONTACT</h3>
+				<input type="hidden" name="idLama" value="<?php echo $idLama?>" />
+				<?php 
+					if (!empty($idLama)) :
+				?>	
+				 <h4>
+                  Vente de lamas
+                 </H4>
+                <h3>Demande de renseignement Vente pour le lama n°<?php echo $idLama?> </h3>
+               
+                <?php 
+				    else :
+				?>	
+				 <h3>FORMULAIRE DE CONTACT</h3>
                 <p>
                   Merci de bien vouloir remplir ce formulaire afin de nous faire part de vos demandes.
                 </p>
+                <?php 
+				    endif;
+				?>	
+                
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">E-mail principal</span>
                   <div class="large-9 medium-9 small-12"><input type="email" name="email" id="email" value="" placeholder="adresse@mail.com" required></div>
                 </label>
                 <label class="grid-x">
-                  <span class="large-3 medium-3 small-12">Nom Prénom</span>
-                  <div class="large-9 medium-9 small-12"><input type="text" name="name" id="nom" value="" placeholder="Mes nom et prénom" required></div>
+                  <span class="large-3 medium-3 small-12">Nom</span>
+                  <div class="large-9 medium-9 small-12"><input type="text" name="name" id="nom" value="" placeholder="Mon nom" required></div>
+                </label>
+                 <label class="grid-x">
+                  <span class="large-3 medium-3 small-12">Prénom</span>
+                  <div class="large-9 medium-9 small-12"><input type="text" name="firstname" id="prenom" value="" placeholder="Mon prénom" required></div>
                 </label>
                 <label class="grid-x">
                   <span class="large-3 medium-3 small-12">Téléphone</span>
@@ -179,6 +169,7 @@
       			        success: function (data) {
       			            $("#resultat").html("<h3>Merci pour votre message <br> Nous allons y donner suite très vite</h3>");
       			        	$("#nom").val("");
+      			        	$("#prenom").val("");
       			        	$("#email").val("");
       			        	$("#tel").val("");
       			           	$("#message").val("");
