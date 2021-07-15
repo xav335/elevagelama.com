@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 5.5.58, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.19  Distrib 10.3.29-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: elevagelama
 -- ------------------------------------------------------
--- Server version	5.5.58-0+deb8u1
+-- Server version	10.3.29-MariaDB-0+deb10u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (2,'admin','admin335335','ico'),(3,'brandacot','brandacot33335',NULL);
+INSERT INTO `admin` VALUES (2,'admin','admin33335','ico'),(3,'brandacot','brandacot33335',NULL);
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,12 +54,12 @@ CREATE TABLE `contact` (
   `name` varchar(250) DEFAULT NULL,
   `email` varchar(250) DEFAULT NULL,
   `tel` varchar(50) DEFAULT NULL,
-  `newsletter` tinyint(4) NOT NULL DEFAULT '0',
-  `fromgoldbook` tinyint(4) NOT NULL DEFAULT '0',
-  `fromcontact` tinyint(4) NOT NULL DEFAULT '0',
+  `newsletter` tinyint(4) NOT NULL DEFAULT 0,
+  `fromgoldbook` tinyint(4) NOT NULL DEFAULT 0,
+  `fromcontact` tinyint(4) NOT NULL DEFAULT 0,
   `message` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=141 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `contact` (
 
 LOCK TABLES `contact` WRITE;
 /*!40000 ALTER TABLE `contact` DISABLE KEYS */;
-INSERT INTO `contact` VALUES (11,'','tiffany sawade','t.sawade@ari-accompagnement.fr',NULL,0,0,1,NULL),(12,'','christelle tauran','christ2l.tauran@gmail.com',NULL,0,0,1,NULL),(13,'','VIRGINIE FAURE','v.faure@grand-cubzaguais.fr',NULL,0,0,1,NULL),(14,'','BARRAL Béatrice','lesgentillescanailles@gmail.com',NULL,0,0,1,NULL),(15,'','GRANARA-BOURASSEAU Carine','carine.bourasseau@cegetel.net',NULL,0,0,1,NULL),(20,'Gregorio','Gonzalez','fjavi.gonzalez@gmail.com',NULL,0,0,0,NULL),(22,'GERARD','AUTISSIER','cleo1920@sfr.fr',NULL,0,0,1,NULL),(23,'Lou','Dunker','lou@sharegosses.fr',NULL,0,0,1,NULL),(24,'Laetitia ','VILLEFRANQUE','l.villefranque@grand-cubzaguais.fr',NULL,0,0,1,NULL),(25,'Gerard','AUTISSIER','cleo190@sfr.fr',NULL,0,0,1,NULL),(26,'murielle','benejat','murielle.benejat@orange.fr',NULL,0,0,1,NULL),(27,'djémila','alexandre','genzy973@live.fr',NULL,0,0,1,NULL),(28,'Murielle','QUINTARD','alsh-vayres@lacali.fr',NULL,0,0,1,NULL),(29,'','frédéric école de cadillac en fronsadais','fredocadi@orange.fr',NULL,0,1,0,NULL),(30,'','Julie','e.mat.laclairiere.gradignan@ac-bordeaux.fr',NULL,0,1,0,NULL),(31,'Gaëlle','TEXIER','gaelle.texier@yahoo.fr',NULL,0,0,1,NULL),(32,'joel','durand','annaffaire@orange.fr',NULL,0,0,1,NULL),(33,'Stéphanie','CHARROIN','boubou070311@gmail.com',NULL,0,0,1,NULL),(34,'Catherine ','Giraud ','fermedechourdens@gmail.com',NULL,0,0,1,NULL),(35,'Quentin','Houdeline','quentinhoudeline@hotmail.fr',NULL,0,0,1,NULL),(36,'Charlotte','BAX','carlotita.b@hotmail.fr',NULL,0,0,1,NULL),(37,'charlotte','marques','marquescha@institutdegenech.fr',NULL,0,0,1,NULL),(38,'gilles','mourguet','gilles.mourguet@saint-bruno.org',NULL,0,0,1,NULL),(39,'Matylde','Village','matylde.elyot@gmail.com',NULL,0,0,1,NULL),(40,'alexandre','saenz','alexandresae@gmail.com',NULL,0,0,1,NULL),(41,'Clara','Liebschutz','clara-gaminou@live.fr',NULL,0,0,1,NULL),(42,'laure','lescure','laure.doublet33@gmail.com',NULL,0,0,1,NULL),(43,'Marie','Roger','marieroger3004@gmail.com',NULL,0,0,1,NULL),(44,'Clémentine','Estampe-Magnani','c.estampe-magnani.aemo@agep.asso.fr',NULL,0,0,1,NULL),(45,'Aurore','GOUNON','aurore.gounon@gmail.com',NULL,0,0,1,NULL),(46,'Jean claude','Charpignon','famillecharpignon@wanadoo.fr',NULL,0,0,1,NULL),(47,'Kattalin','Grech','kattalin.grech@outlook.fr',NULL,0,0,1,NULL),(48,'Anne-Sophie','Lanciaux','e.mat.portets@ac-bordeaux.fr',NULL,0,0,1,NULL),(49,'Laurence','CHASSAGNOUX','chassagnouxlaurence@yahoo.fr',NULL,0,0,1,NULL),(50,'ingrid','berry','i-berry@hotmail.fr',NULL,0,0,1,NULL),(51,'Angelique','Lorca','angel.b.18@hotmail.fr',NULL,0,0,1,NULL),(52,'Alice','Planchon','alice.bibiche@hotmail.fr',NULL,0,0,1,NULL),(53,'ludivine','esquer giret','ce.0330304b@ac-bordeaux.fr',NULL,0,0,1,NULL),(54,'Jordan','TALPOT','Jordan.talpot@gmail.com',NULL,0,0,1,NULL),(55,'Aurélie','Chaine','chaineaurelie@gmail.com',NULL,0,0,1,NULL),(56,'Jean-David','Schutz','sch_jeandavid@yahoo.com',NULL,0,0,1,NULL),(57,'Gwenaelle','Pradinat','gwenaelle_19@hotmail.com',NULL,0,0,1,NULL),(58,'Hélène','Plainfossé','plainfosse.helene@gmail.com',NULL,0,0,1,NULL),(59,'brigitte','Lambert','vega10@hotmail.fr',NULL,0,0,1,NULL),(60,'Charlotte','Ramat','chacha82@gmail.com',NULL,0,0,1,NULL),(61,'Sébastien','ROVERCH','sebastien@roverch.fr',NULL,0,0,1,NULL),(62,'Oceane ','Fedon ','oceane.fedon@gmail.com',NULL,0,0,1,NULL),(63,'Chats de Blaye','Association','chatsdeblaye@gmail.com',NULL,0,0,1,NULL),(64,'CORALIE','RAPIN','coralie8333@gmail.com',NULL,0,0,1,NULL),(65,'valery','montignac','valeryping@free.fr',NULL,0,0,1,NULL),(66,'Camille','Echo des parents','lechodesparents33@gmail.com',NULL,0,0,1,NULL),(67,'','Célia ALOMBERT','ccpialoux@gmail.com',NULL,0,1,0,NULL),(68,'Jessica','Lenie','jess.mizouvitch@gmail.com',NULL,0,0,1,NULL),(69,'Alexandrine','Civard-racinais','alexandrine.racinais@gmail.com',NULL,0,0,1,NULL),(70,'Pauline','Marcouillier','marcouillierpauline310@gmail.com',NULL,0,0,1,NULL),(71,'Christine et Christelle ','Dechico et Ciparis ','naifetpasbete@gmail.com',NULL,0,0,1,NULL),(72,'emilie','lagourette','corrihonsguillaume@hotmail.fr',NULL,0,0,1,NULL),(73,'Jerome','Andriolet','jerome.andriolet@gmail.com',NULL,0,0,1,NULL),(74,'Véronique','TESSONNEAUD','peri.educatif@cc-estuaire.fr',NULL,0,0,1,NULL),(75,'Sandrine','Bousquet','sandrine.bousquet@gmail.com',NULL,0,0,1,NULL),(76,'Marie-Gabrielle','Lopes','asso.tilou@gmail.com',NULL,0,0,1,NULL),(77,'Sophie','marcoul','marcoul1996@outlook.com',NULL,0,0,1,NULL),(78,'Tara','Tara','iemanja76@aol.fr',NULL,0,0,1,NULL),(79,'Coralie','CLEDARD','coralie.c.33@gmail.com',NULL,0,0,1,NULL),(80,'Peggy','BASSINY','e-bussac-foret@ac-poitiers.fr',NULL,0,0,1,NULL),(81,'Stéphanie','GOYON','stephanie.goyon@mfr.asso.fr',NULL,0,0,1,NULL),(82,'JEAN PIERRE','ELIE','jp.elie@guidacco.com',NULL,0,0,1,NULL),(83,'Philippe','Delubriat','ph.del@hotmail.com',NULL,0,0,1,NULL),(84,'karine','buffard','buffard.karine@gmail.com',NULL,0,0,1,NULL),(85,'Amélie','FLEURY','ameliiefleury@gmail.com',NULL,0,0,1,NULL);
+INSERT INTO `contact` VALUES (11,'','tiffany sawade','t.sawade@ari-accompagnement.fr',NULL,0,0,1,NULL),(12,'','christelle tauran','christ2l.tauran@gmail.com',NULL,0,0,1,NULL),(13,'','VIRGINIE FAURE','v.faure@grand-cubzaguais.fr',NULL,0,0,1,NULL),(14,'','BARRAL Béatrice','lesgentillescanailles@gmail.com',NULL,0,0,1,NULL),(15,'','GRANARA-BOURASSEAU Carine','carine.bourasseau@cegetel.net',NULL,0,0,1,NULL),(20,'Gregorio','Gonzalez','fjavi.gonzalez@gmail.com',NULL,0,0,0,NULL),(22,'GERARD','AUTISSIER','cleo1920@sfr.fr',NULL,0,0,1,NULL),(23,'Lou','Dunker','lou@sharegosses.fr',NULL,0,0,1,NULL),(24,'Laetitia ','VILLEFRANQUE','l.villefranque@grand-cubzaguais.fr',NULL,0,0,1,NULL),(25,'Gerard','AUTISSIER','cleo190@sfr.fr',NULL,0,0,1,NULL),(26,'murielle','benejat','murielle.benejat@orange.fr',NULL,0,0,1,NULL),(27,'djémila','alexandre','genzy973@live.fr',NULL,0,0,1,NULL),(28,'Murielle','QUINTARD','alsh-vayres@lacali.fr',NULL,0,0,1,NULL),(29,'','frédéric école de cadillac en fronsadais','fredocadi@orange.fr',NULL,0,1,0,NULL),(30,'','Julie','e.mat.laclairiere.gradignan@ac-bordeaux.fr',NULL,0,1,0,NULL),(31,'Gaëlle','TEXIER','gaelle.texier@yahoo.fr',NULL,0,0,1,NULL),(32,'joel','durand','annaffaire@orange.fr',NULL,0,0,1,NULL),(33,'Stéphanie','CHARROIN','boubou070311@gmail.com',NULL,0,0,1,NULL),(34,'Catherine ','Giraud ','fermedechourdens@gmail.com',NULL,0,0,1,NULL),(35,'Quentin','Houdeline','quentinhoudeline@hotmail.fr',NULL,0,0,1,NULL),(36,'Charlotte','BAX','carlotita.b@hotmail.fr',NULL,0,0,1,NULL),(37,'charlotte','marques','marquescha@institutdegenech.fr',NULL,0,0,1,NULL),(38,'gilles','mourguet','gilles.mourguet@saint-bruno.org',NULL,0,0,1,NULL),(39,'Matylde','Village','matylde.elyot@gmail.com',NULL,0,0,1,NULL),(40,'alexandre','saenz','alexandresae@gmail.com',NULL,0,0,1,NULL),(41,'Clara','Liebschutz','clara-gaminou@live.fr',NULL,0,0,1,NULL),(42,'laure','lescure','laure.doublet33@gmail.com',NULL,0,0,1,NULL),(43,'Marie','Roger','marieroger3004@gmail.com',NULL,0,0,1,NULL),(44,'Clémentine','Estampe-Magnani','c.estampe-magnani.aemo@agep.asso.fr',NULL,0,0,1,NULL),(45,'Aurore','GOUNON','aurore.gounon@gmail.com',NULL,0,0,1,NULL),(46,'Jean claude','Charpignon','famillecharpignon@wanadoo.fr',NULL,0,0,1,NULL),(47,'Kattalin','Grech','kattalin.grech@outlook.fr',NULL,0,0,1,NULL),(48,'Anne-Sophie','Lanciaux','e.mat.portets@ac-bordeaux.fr',NULL,0,0,1,NULL),(49,'Laurence','CHASSAGNOUX','chassagnouxlaurence@yahoo.fr',NULL,0,0,1,NULL),(50,'ingrid','berry','i-berry@hotmail.fr',NULL,0,0,1,NULL),(51,'Angelique','Lorca','angel.b.18@hotmail.fr',NULL,0,0,1,NULL),(52,'Alice','Planchon','alice.bibiche@hotmail.fr',NULL,0,0,1,NULL),(53,'ludivine','esquer giret','ce.0330304b@ac-bordeaux.fr',NULL,0,0,1,NULL),(54,'Jordan','TALPOT','Jordan.talpot@gmail.com',NULL,0,0,1,NULL),(55,'Aurélie','Chaine','chaineaurelie@gmail.com',NULL,0,0,1,NULL),(56,'Jean-David','Schutz','sch_jeandavid@yahoo.com',NULL,0,0,1,NULL),(57,'Gwenaelle','Pradinat','gwenaelle_19@hotmail.com',NULL,0,0,1,NULL),(58,'Hélène','Plainfossé','plainfosse.helene@gmail.com',NULL,0,0,1,NULL),(59,'brigitte','Lambert','vega10@hotmail.fr',NULL,0,0,1,NULL),(60,'Charlotte','Ramat','chacha82@gmail.com',NULL,0,0,1,NULL),(61,'Sébastien','ROVERCH','sebastien@roverch.fr',NULL,0,0,1,NULL),(62,'Oceane ','Fedon ','oceane.fedon@gmail.com',NULL,0,0,1,NULL),(63,'Chats de Blaye','Association','chatsdeblaye@gmail.com',NULL,0,0,1,NULL),(64,'CORALIE','RAPIN','coralie8333@gmail.com',NULL,0,0,1,NULL),(65,'valery','montignac','valeryping@free.fr',NULL,0,0,1,NULL),(66,'Camille','Echo des parents','lechodesparents33@gmail.com',NULL,0,0,1,NULL),(67,'','Célia ALOMBERT','ccpialoux@gmail.com',NULL,0,1,0,NULL),(68,'Jessica','Lenie','jess.mizouvitch@gmail.com',NULL,0,0,1,NULL),(69,'Alexandrine','Civard-racinais','alexandrine.racinais@gmail.com',NULL,0,0,1,NULL),(70,'Pauline','Marcouillier','marcouillierpauline310@gmail.com',NULL,0,0,1,NULL),(71,'Christine et Christelle ','Dechico et Ciparis ','naifetpasbete@gmail.com',NULL,0,0,1,NULL),(72,'emilie','lagourette','corrihonsguillaume@hotmail.fr',NULL,0,0,1,NULL),(73,'Jerome','Andriolet','jerome.andriolet@gmail.com',NULL,0,0,1,NULL),(74,'Véronique','TESSONNEAUD','peri.educatif@cc-estuaire.fr',NULL,0,0,1,NULL),(75,'Sandrine','Bousquet','sandrine.bousquet@gmail.com',NULL,0,0,1,NULL),(76,'Marie-Gabrielle','Lopes','asso.tilou@gmail.com',NULL,0,0,1,NULL),(77,'Sophie','marcoul','marcoul1996@outlook.com',NULL,0,0,1,NULL),(78,'Tara','Tara','iemanja76@aol.fr',NULL,0,0,1,NULL),(79,'Coralie','CLEDARD','coralie.c.33@gmail.com',NULL,0,0,1,NULL),(80,'Peggy','BASSINY','e-bussac-foret@ac-poitiers.fr',NULL,0,0,1,NULL),(81,'Stéphanie','GOYON','stephanie.goyon@mfr.asso.fr',NULL,0,0,1,NULL),(82,'JEAN PIERRE','ELIE','jp.elie@guidacco.com',NULL,0,0,1,NULL),(83,'Philippe','Delubriat','ph.del@hotmail.com',NULL,0,0,1,NULL),(84,'karine','buffard','buffard.karine@gmail.com',NULL,0,0,1,NULL),(85,'Amélie','FLEURY','ameliiefleury@gmail.com',NULL,0,0,1,NULL),(86,'ISABELLE','pelletier','zaboupelletier@hotmail.com',NULL,0,0,1,NULL),(87,'emilie','darrigade','emily.darrigade@gmail.com',NULL,0,0,1,NULL),(88,'Marion','Loupret','marion.loupret@adapei33.com',NULL,0,0,1,NULL),(89,'isabelle','taleyran','stam.nil@orange.fr',NULL,0,0,1,NULL),(90,'Veronique','JEAN','v.jean44@gmail.com',NULL,0,0,1,NULL),(91,'Corinne','Boisnaud','cobsd33@gmail.com',NULL,0,0,1,NULL),(92,'Joe','TJYKTMJ89','info@domainworld.com',NULL,0,0,1,NULL),(93,'Youri ','Leclercq ','youri.leclercq@gmail.com',NULL,0,0,1,NULL),(94,'Martine','Bernicot','mardelvec33@hotmail.fr',NULL,0,0,1,NULL),(95,'Melanie','Laffont','laffont.melanie@outlook.fr',NULL,0,0,1,NULL),(96,'Cathy','HERRERO','capinou@free.fr',NULL,0,0,1,NULL),(97,'HORNYCH','Josephine','jhornych@orange.fr',NULL,0,0,1,NULL),(98,'Aurelie','Thiolat','aurelie.thiolat@gmail.com',NULL,0,0,1,NULL),(99,'Deborah','Ciarapica','deborahcpc@me.com',NULL,0,0,1,NULL),(100,'leonie','queutry','qtsm@orange.fr',NULL,0,0,1,NULL),(101,'Camille','Hardouin','camillehardouind@hotmail.fr',NULL,0,0,1,NULL),(102,'damien','Fortier','damienfortier5@hotmail.fr',NULL,0,0,1,NULL),(103,'Elisz','Marchand','sebelisa1335@gmail.com',NULL,0,0,1,NULL),(104,'Héloïse','Réocreux','heloise.reocreux@gmail.com',NULL,0,0,1,NULL),(105,'Timothée','Balsamo','balsamotimothee@gmail.com',NULL,0,0,1,NULL),(106,'Cecile ','Lefebvre ','cecv2v@yahoo.fr',NULL,0,0,1,NULL),(107,'Christopher','Derrett','christopherderrett@hotmail.fr',NULL,0,0,1,NULL),(108,'Patrick','Ducassé','patrick.ducasse@gmail.com',NULL,0,0,1,NULL),(109,'tania (cousine de Sylviane Troy)','decure','tand@wanadoo.fr',NULL,0,0,1,NULL),(110,'Marine','Desbarats','marine.desbarats@hotmail.fr',NULL,0,0,1,NULL),(111,'neguelouart','chloe','cneguelouart@gmail.com',NULL,0,0,1,NULL),(112,'Joe','XPWGI7QA','info@domainregistercorp.com',NULL,0,0,1,NULL),(113,'Joe','Joe Miller','info@domainregistration.com',NULL,0,0,1,NULL),(114,'Maria Àngels','caus','reserva@merollabergueda.com',NULL,0,0,1,NULL),(115,'Sandra ','Ros ','rossandra@ymail.com',NULL,0,0,1,NULL),(116,'Elodie','AMEN','elodie.lescure@hotmail.fr',NULL,0,0,1,NULL),(117,'NATHALIE','HANRIOT','nathaliehanriot@hotmail.com',NULL,0,0,1,NULL),(118,'Salomé','Neuville','collaboration@bellepaga.com',NULL,0,0,1,NULL),(119,'Marion','chipault','marion.farrugia@hotmail.fr',NULL,0,0,1,NULL),(120,'Frankie','Brookes','hfbrookes@yahoo.com',NULL,0,0,1,NULL),(121,'Sandra','LELONG','sjm.lelong@gmail.com',NULL,0,0,1,NULL),(122,'Elodie','Seiller','elodie.seiller@posteo.net',NULL,0,0,1,NULL),(123,'Joe','Joe Miller','info@domainregistrationcorp.com',NULL,0,0,1,NULL),(124,'Malta','coralie','coralie.malta@gmail.com',NULL,0,0,1,NULL),(125,'Lola','Raymond','lola.raymond@live.fr',NULL,0,0,1,NULL),(126,'Nicolas','Beaugeard','nicolas.beaugeard@free.fr',NULL,0,0,1,NULL),(127,'Martine','Pernelle','martine-p2011@hotmail.fr',NULL,0,0,1,NULL),(128,'Murielle','Saze','murielle.saze@wanadoo.fr',NULL,0,0,1,NULL),(129,'Myriam','CANCELLIER','mycan46@hotmail.fr',NULL,0,0,1,NULL),(130,'Maryse','troy','maryse.troy@laposte.net',NULL,0,0,1,NULL),(131,'Elodie','Sreckovic','elodiesoulf@hotmail.com',NULL,0,0,1,NULL),(132,'Muriel','Duplan','muriel.duplan@free.fr',NULL,0,0,1,NULL),(133,'nathalie','merveillaut','nathalie@merveillaut.fr',NULL,0,0,1,NULL),(134,'ATTENTION','Den','info@orderdomains.com',NULL,0,0,1,NULL),(135,'Nathalie','ARVY','mysticabal@outlook.fr',NULL,0,0,1,NULL),(136,'denis','bonnamy','denis.bonnamy@neuf.fr',NULL,0,0,1,NULL),(137,'Marina','Touron','apsmatlebequet@mairie-villenavedornon.fr',NULL,0,0,1,NULL),(138,'BEATRICE','DAVID','danielbea33@gmail.com',NULL,0,0,1,NULL),(139,'Haslach','Tanja & Sascha','tanja-sascha@bluewin.ch',NULL,0,0,1,NULL),(140,'Zoé','Magès','zoe.mages@gmail.com',NULL,0,0,1,NULL);
 /*!40000 ALTER TABLE `contact` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -84,8 +84,8 @@ CREATE TABLE `goldbook` (
   `date` datetime NOT NULL,
   `nom` varchar(250) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
-  `message` text,
-  `online` tinyint(4) NOT NULL DEFAULT '0',
+  `message` text DEFAULT NULL,
+  `online` tinyint(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -110,13 +110,13 @@ DROP TABLE IF EXISTS `lamas`;
 CREATE TABLE `lamas` (
   `id_news` int(11) NOT NULL AUTO_INCREMENT,
   `date_news` date NOT NULL,
-  `accroche` text,
+  `accroche` text DEFAULT NULL,
   `titre` varchar(250) NOT NULL,
-  `contenu` text,
+  `contenu` text DEFAULT NULL,
   `image1` varchar(250) DEFAULT NULL,
-  `online` tinyint(4) NOT NULL DEFAULT '0',
+  `online` tinyint(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id_news`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +125,7 @@ CREATE TABLE `lamas` (
 
 LOCK TABLES `lamas` WRITE;
 /*!40000 ALTER TABLE `lamas` DISABLE KEYS */;
-INSERT INTO `lamas` VALUES (41,'2020-06-07','','Coca','Coca est une femelle lama née le 09 mai 2020. Elle est la fille de Blue Tacoma et de Khéops de Brandacot.\r\nToison blanche, joues et queue de couleur noir. Sera fortement lainée.\r\n','/IMG_1016_r_duit-41.jpg',1),(42,'2020-06-07','','Ekéko','Ekéko et un mâle lama née le 29 mai 2020. Il est le fils de Okarina de Claris et de Khéops de Brandacot.\r\nToison tricolore (roux - blanc - gris) sera fortement lainée.  ','/IMG_1012_r_duit-42.jpg',1);
+INSERT INTO `lamas` VALUES (43,'2021-04-24','','femelle lama Holi - RESERVEE','Femelle lama tricolore née le 15 avril 2021.\r\nfille de Mouchette et de Pilpoil.\r\nRESERVEE.','/IMG_1175_mail-43.jpg',1);
 /*!40000 ALTER TABLE `lamas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,13 +139,13 @@ DROP TABLE IF EXISTS `news`;
 CREATE TABLE `news` (
   `id_news` int(11) NOT NULL AUTO_INCREMENT,
   `date_news` date NOT NULL,
-  `accroche` text,
+  `accroche` text DEFAULT NULL,
   `titre` varchar(250) NOT NULL,
-  `contenu` text,
+  `contenu` text DEFAULT NULL,
   `image1` varchar(250) DEFAULT NULL,
-  `online` tinyint(4) NOT NULL DEFAULT '0',
+  `online` tinyint(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id_news`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -154,7 +154,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (34,'2018-04-19','','PUBLICATION DE NOTRE LIVRE ','Éros notre lama exceptionnel nous a quitté cette année. \r\nJoël lui rend hommage en racontant son histoire dans ce livre. Le manuscrit est disponible sur le site de l\'éditeur EDILIVRE par le lien suivant : <a href=\"http://www.edilivre.com/doc/759817\" target=\"_blank\">www.edilivre.com</a> Possibilité également de l\'acquerrir à la ferme.\r\n','/Screenshot_2018_03_24_10.47.00-.png',1),(35,'2017-06-13','','LAMA GARDIEN DE TROUPEAU','Dans le cadre de notre spécialité Lama Gardien de Troupeau, notre dernier lama sélectionné a été vendu. Pour toute demande, nous contacter pour une nouvelle sélection.\r\n\r\n','/11_mai_2008_1-35.jpg',1),(38,'2020-06-06','','2020 - Deux nouvelles naissances ','Au cours du mois de Mai notre élevage s\'est agrandi de deux nouvelles naissances. Une femelle prénommée Coca et un mâle prénommé Ekéko.','/IMG_0977_reduit-.jpg',1),(39,'2020-06-07','','Visite de la ferme ','La fin du confinement nous permet de ré ouvrir notre élevage de lamas  aux différents groupes pour la visite de la ferme. \r\nDes visites pour \"le grand public\" seront programmées au court de l\'été. Les dates seront signalées sur notre site. Toutefois pour des groupes égaux ou supérieurs à 10 personnes n\'hésitez pas à nous appeler pour prendre Rendez-vous directement. Tél.06 20 89 70 15 ou 05 57 42 20 61.','/IMG_1017_reduit-39.jpg',1);
+INSERT INTO `news` VALUES (34,'2018-04-19','','PUBLICATION DE NOTRE LIVRE ','Éros notre lama exceptionnel nous a quitté cette année. \r\nJoël lui rend hommage en racontant son histoire dans ce livre. Le manuscrit est disponible sur le site de l\'éditeur EDILIVRE par le lien suivant : <a href=\"http://www.edilivre.com/doc/759817\" target=\"_blank\">www.edilivre.com</a> Possibilité également de l\'acquerrir à la ferme.\r\n','/Screenshot_2018_03_24_10.47.00-.png',1),(35,'2017-06-13','','LAMA GARDIEN DE TROUPEAU','Dans le cadre de notre spécialité Lama Gardien de Troupeau, notre dernier lama sélectionné a été vendu. Pour toute demande, nous contacter pour une nouvelle sélection.\r\n\r\n','/11_mai_2008_1-35.jpg',1),(41,'2021-07-14','','Visite de l\'élevage ','Notre élevage est ouvert pour les visites de groupes - prendre RDV.\r\nActuellement je suis occupé par la venue des centres de loisirs. Quant aux visites pour \"le grand public\" en fonction de la météo j\'envisage de programmer une visite soit le samedi 24 ou 31 juillet prochain. Je vous informerai de ma décision sur le présent site.','/IMG_0977_reduit-.jpg',1),(42,'2021-04-15','','Naissance','le 15 avril 2021 HOLIE est venue agrandir notre troupeau. Robe tricolore - blanc/beige/gris','/IMG_1175_mail-42.jpg',1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -167,4 +167,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-06-09 19:44:56
+-- Dump completed on 2021-07-15 16:20:42

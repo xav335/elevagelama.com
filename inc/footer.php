@@ -8,3 +8,12 @@
 <script src="js/vendor/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script src="js/app.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GC7RFWFH35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GC7RFWFH35');
+</script>
