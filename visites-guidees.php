@@ -92,8 +92,8 @@
                 </p>
                 <p>
                   <span class="underline">Tarifs :</span><br/>
-                  Adulte: <strong>6€</strong> - de 3 à 12 ans: <strong>4€</strong>, gratuit pour les enfants de moins de 3 ans.<br/>
-                  <strong>Pour les groupes</strong> de plus de <strong>20</strong> personnes : Adulte : <strong>5€</strong> - de 3 à 12 ans: <strong>3,50€</strong><br/>
+                  Adulte: <strong>7€</strong> - de 3 à 12 ans: <strong>5€</strong>, gratuit pour les enfants de moins de 3 ans.<br/>
+                  <strong>Pour les groupes</strong> de plus de <strong>20</strong> personnes : Adulte : <strong>6€</strong> - de 3 à 12 ans: <strong>4€</strong><br/>
                   gratuit pour un accompagnateur.
                 </p>
               </div>
