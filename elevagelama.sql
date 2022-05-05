@@ -116,7 +116,7 @@ CREATE TABLE `lamas` (
   `image1` varchar(250) DEFAULT NULL,
   `online` tinyint(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id_news`)
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +125,7 @@ CREATE TABLE `lamas` (
 
 LOCK TABLES `lamas` WRITE;
 /*!40000 ALTER TABLE `lamas` DISABLE KEYS */;
-INSERT INTO `lamas` VALUES (43,'2022-03-16','',' Boulba de Brandacot','Mâle lama né le 16/03/2022 fortement lainé.\r\nFils de Blue Tacoma et de Khéops de Brandacot. \r\nA réserver','',1);
+INSERT INTO `lamas` VALUES (43,'2022-03-16','','Male lama','Boulba de Brandacot -  né le 16/03/2022 fortement lainé.\r\nFils de Blue Tacoma et de Khéops de Brandacot. \r\nA réserver','/IMG_1377-43.jpg',1),(44,'2022-05-02','','Male lama','Inca de Brandacot - né le 28 avril 2022 - fils de Pilpoil de Claris et de Patcha de Brandacot.\r\nFortement lainé - blanc et gris. A réserver.','/IMG_1360-.jpg',1);
 /*!40000 ALTER TABLE `lamas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -154,7 +154,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (34,'2018-04-19','','PUBLICATION DE NOTRE LIVRE ','Éros notre lama exceptionnel nous a quitté cette année. \r\nJoël lui rend hommage en racontant son histoire dans ce livre. Le manuscrit est disponible sur le site de l\'éditeur EDILIVRE par le lien suivant : <a href=\"http://www.edilivre.com/doc/759817\" target=\"_blank\">www.edilivre.com</a> Possibilité également de l\'acquerrir à la ferme.\r\n','/Screenshot_2018_03_24_10.47.00-.png',1),(35,'2017-06-13','','LAMA GARDIEN DE TROUPEAU','Dans le cadre de notre spécialité Lama Gardien de Troupeau, notre dernier lama sélectionné a été vendu. Pour toute demande, nous contacter pour une nouvelle sélection.\r\n\r\n','/11_mai_2008_1-35.jpg',1),(41,'2022-04-19','','Visite de l\'élevage ','Nous prévoyons une visite de l\'élevage pour le grand public samedi 23 avril prochain dans l’après-midi. Toutefois auparavant nous consulterons les prévisions météo et nous confirmerons éventuellement cette visite au plus tard jeudi 21 avril.','/IMG_0977_reduit-.jpg',1),(43,'2022-04-16','','Naissance lama','A ce jour  16 mars,  naissance d\'un petit mâle lama, fils de Blue TACOMA et de Khéops de Brandacot - Un lama qui sera fortement lainé aux couleurs de ses parents.','',1);
+INSERT INTO `news` VALUES (34,'2018-04-19','','PUBLICATION DE NOTRE LIVRE ','Éros notre lama exceptionnel nous a quitté cette année. \r\nJoël lui rend hommage en racontant son histoire dans ce livre. Le manuscrit est disponible sur le site de l\'éditeur EDILIVRE par le lien suivant : <a href=\"http://www.edilivre.com/doc/759817\" target=\"_blank\">www.edilivre.com</a> Possibilité également de l\'acquerrir à la ferme.\r\n','/Screenshot_2018_03_24_10.47.00-.png',1),(35,'2017-06-13','','LAMA GARDIEN DE TROUPEAU','Dans le cadre de notre spécialité Lama Gardien de Troupeau, notre dernier lama sélectionné a été vendu. Pour toute demande, nous contacter pour une nouvelle sélection.\r\n\r\n','/11_mai_2008_1-35.jpg',1),(41,'2022-05-26','','Visite de l\'élevage ',' Pour le \"grand public\" nous envisageons de programmer une visite pour l\'ascension (semaine 21)  et toujours selon la météo. Nous déterminerons la date en début de semaine. Vous pouvez également nous contacter. ','/IMG_0977_reduit-.jpg',1),(43,'2022-05-02','','Naissances  lamas','A ce jour  02 mai,  notre élevage  s\'est enrichi deux deux naissances, deux mâles lama de génétique différente. Ils sont à réserver - voir notre page \"lamas en vente\".','/IMG_1335_par_mail-43.jpg',1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -167,4 +167,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-19 22:51:00
+-- Dump completed on 2022-05-05 20:31:28
