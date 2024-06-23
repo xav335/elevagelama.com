@@ -38,6 +38,8 @@ if ($_POST[ "action" ] == "sendMail") {
 	}
 
 	//$_to = "fjavi.gonzalez@gmail.com";
+	//$_to = "live.ginger.whale@aboutmy.email";
+	//$_to = "test-64k0xfcng@srv1.mail-tester.com";
 	$_to = ( MAIL_TEST != '' )
     	? MAIL_TEST
     	: MAIL_CONTACT;
